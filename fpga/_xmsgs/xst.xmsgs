@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 133: Assignment to <arg fmt="%s" index="1">clkout2_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 134: Assignment to <arg fmt="%s" index="1">clkout3_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 135: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 136: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 137: Assignment to <arg fmt="%s" index="1">locked_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v" Line 352: Result of <arg fmt="%d" index="1">31</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">FSB_A&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">FSB_SIZ</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">IOB_nDSACK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CPU_nCIOUT</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CPU_nECS</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CPU_nDS</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CPU_nCBREQ</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">nRES</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">IOBCLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">IOB_nBERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">LHALT</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">pll_base_inst</arg> in unit <arg fmt="%s" index="2">pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Flip flop associated with net</arg> <arg fmt="%s" index="2">RAM_CLK01_OBUF</arg> not found, property <arg fmt="%s" index="3">IOB</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_FC&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_FC&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_FC&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;31&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;30&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;29&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;28&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;27&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;26&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;25&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;24&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;23&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;22&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;21&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;20&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;19&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;18&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;17&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;16&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;15&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;14&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;13&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;12&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;11&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;10&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;9&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;8&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;7&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;6&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;5&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;4&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_A&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_RnW</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;31&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;31&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;30&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;30&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;29&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;29&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;28&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;28&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;27&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;27&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;26&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;26&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;25&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;25&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;24&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;24&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;23&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;23&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;22&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;22&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;21&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;21&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;20&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;20&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;19&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;19&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;18&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;18&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;17&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;17&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;16&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;16&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;15&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;15&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;14&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;14&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;13&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;13&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;12&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;12&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;11&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;11&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;10&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;10&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;9&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;9&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;8&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;8&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;7&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;7&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;6&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;6&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;5&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;5&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;4&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;4&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_D&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_BA&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_BA&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_BA&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_BA&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;12&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;12&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;11&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;11&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;10&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;10&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;9&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;9&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;8&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;8&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;7&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;7&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;6&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;6&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;5&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;5&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;4&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;4&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_A&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_DQM&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_A&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_SIZ&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_SIZ&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_SIZ&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_SIZ&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;31&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;31&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;30&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;30&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;29&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;29&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;28&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;28&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;27&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;27&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;26&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;26&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;25&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;25&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;24&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;24&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;23&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;23&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;22&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;22&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;21&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;21&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;20&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;20&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;19&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;19&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;18&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;18&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;17&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;17&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;16&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;16&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;15&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;15&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;14&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;14&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;13&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;13&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;12&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;12&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;11&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;11&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;10&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;10&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;9&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;9&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;8&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;8&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;7&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;7&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;6&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;6&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;5&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;5&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;4&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;4&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;3&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;2&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;1&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_D&lt;0&gt;</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_nRMC</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">FSB_nRMC</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nAOE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nAOE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nDSACKOE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nDSACKOE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nDOE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nDOE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_DDIR</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_DDIR</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nCBACK</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nCBACK</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nCIIN</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nCIIN</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nHALT</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">CPU_nHALT</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nCS</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nCS</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nRAS</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nRAS</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nCAS</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nCAS</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nWE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_nWE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_CKE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_CKE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_CLK23</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">RAM_CLK23</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nAOE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nAOE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_ADoutLE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_ADoutLE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nAS</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nAS</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nDS</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nDS</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nDOE</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_nDOE</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_DDIR</arg> not found, property <arg fmt="%s" index="3">IOSTANDARD</arg> not attached.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Instance associated with port</arg> <arg fmt="%s" index="2">IOB_DDIR</arg> not found, property <arg fmt="%s" index="3">DRIVE</arg> not attached.
+</msg>
+
+</messages>
+

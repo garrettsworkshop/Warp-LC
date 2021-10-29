@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/CLK.v"
+verilog work "WarpLC.v"

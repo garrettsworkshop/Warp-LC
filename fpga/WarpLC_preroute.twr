@@ -1,0 +1,160 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml WarpLC_preroute.twx WarpLC_map.ncd -o WarpLC_preroute.twr
+WarpLC.pcf -ucf PLL.ucf
+
+Design file:              WarpLC_map.ncd
+Physical constraint file: WarpLC.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLKIN
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+FSB_A<0>    |   13.023(R)|      SLOW  |   -7.585(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<1>    |   12.884(R)|      SLOW  |   -7.431(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<2>    |   12.631(R)|      SLOW  |   -7.394(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<3>    |   12.641(R)|      SLOW  |   -7.409(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<4>    |   12.880(R)|      SLOW  |   -7.561(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<5>    |   12.741(R)|      SLOW  |   -7.407(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<6>    |   12.296(R)|      SLOW  |   -7.155(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<7>    |   12.306(R)|      SLOW  |   -7.170(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<8>    |   12.539(R)|      SLOW  |   -7.316(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<9>    |   12.400(R)|      SLOW  |   -7.162(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<10>   |   11.961(R)|      SLOW  |   -6.916(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<11>   |   12.140(R)|      SLOW  |   -7.100(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<12>   |   11.370(R)|      SLOW  |   -6.243(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<13>   |   11.798(R)|      SLOW  |   -6.633(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<14>   |   11.760(R)|      SLOW  |   -6.788(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<15>   |   11.233(R)|      SLOW  |   -6.266(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<16>   |   11.974(R)|      SLOW  |   -6.920(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<17>   |   11.982(R)|      SLOW  |   -6.936(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<18>   |   11.664(R)|      SLOW  |   -6.788(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<19>   |   11.544(R)|      SLOW  |   -6.696(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<20>   |   11.618(R)|      SLOW  |   -6.683(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<21>   |   11.622(R)|      SLOW  |   -6.672(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<22>   |   11.438(R)|      SLOW  |   -6.681(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<23>   |   11.192(R)|      SLOW  |   -6.440(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<24>   |   11.518(R)|      SLOW  |   -6.679(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<25>   |   11.768(R)|      SLOW  |   -6.914(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<26>   |   11.702(R)|      SLOW  |   -7.041(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<27>   |   11.630(R)|      SLOW  |   -6.974(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<28>   |   11.573(R)|      SLOW  |   -6.971(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<29>   |   11.565(R)|      SLOW  |   -6.929(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<30>   |   11.495(R)|      SLOW  |   -7.056(R)|      FAST  |FSBCLK            |   0.000|
+FSB_A<31>   |   11.352(R)|      SLOW  |   -6.975(R)|      FAST  |FSBCLK            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLKIN to Pad
+------------+-----------------+------------+-----------------+------------+----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                            | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)           | Phase  |
+------------+-----------------+------------+-----------------+------------+----------------------------+--------+
+CLKFB_OUT   |        -0.063(R)|      FAST  |        -0.086(R)|      SLOW  |instance_name/clkfb_bufg_out|   0.000|
+            |        -0.057(F)|      FAST  |        -0.086(F)|      SLOW  |instance_name/clkfb_bufg_out|   0.000|
+CPUCLK      |        -0.151(R)|      FAST  |        -0.159(R)|      SLOW  |CPUCLKi                     |   0.000|
+CPU_nDSACK  |         2.827(R)|      FAST  |         2.128(R)|      SLOW  |FSBCLK                      |   0.000|
+CPU_nSTERM  |         1.831(R)|      FAST  |         1.400(R)|      SLOW  |FSBCLK                      |   0.000|
+RAM_CLK01   |        -0.063(R)|      FAST  |        -0.086(R)|      SLOW  |FSBCLK                      |   0.000|
+            |        -0.057(F)|      FAST  |        -0.086(F)|      SLOW  |FSBCLK                      |   0.000|
+nFPUCS      |         2.114(R)|      FAST  |         1.715(R)|      SLOW  |CPUCLKi                     |   0.000|
+------------+-----------------+------------+-----------------+------------+----------------------------+--------+
+
+Clock to Setup on destination clock CLKIN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKIN          |    2.278|    3.404|    1.399|         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CPU_nAS        |nFPUCS         |    9.241|
+FSB_A<0>       |CPU_nDSACK     |   11.438|
+FSB_A<1>       |CPU_nDSACK     |   11.056|
+FSB_A<2>       |CPU_nDSACK     |   10.934|
+FSB_A<3>       |CPU_nDSACK     |   11.272|
+FSB_A<4>       |CPU_nDSACK     |   10.959|
+FSB_A<5>       |CPU_nDSACK     |   10.647|
+FSB_A<6>       |CPU_nDSACK     |   11.009|
+FSB_A<7>       |CPU_nDSACK     |   10.884|
+FSB_A<8>       |CPU_nDSACK     |   10.427|
+FSB_A<9>       |CPU_nDSACK     |   10.796|
+FSB_A<10>      |CPU_nDSACK     |   10.296|
+FSB_A<11>      |CPU_nDSACK     |    9.984|
+FSB_A<12>      |CPU_nDSACK     |   10.429|
+FSB_A<13>      |CPU_nDSACK     |   10.457|
+FSB_A<13>      |nFPUCS         |   10.825|
+FSB_A<14>      |CPU_nDSACK     |   10.376|
+FSB_A<14>      |nFPUCS         |   11.030|
+FSB_A<15>      |CPU_nDSACK     |   10.288|
+FSB_A<15>      |nFPUCS         |   11.487|
+FSB_A<16>      |CPU_nDSACK     |   10.253|
+FSB_A<16>      |nFPUCS         |   12.145|
+FSB_A<17>      |CPU_nDSACK     |    9.855|
+FSB_A<17>      |nFPUCS         |   11.537|
+FSB_A<18>      |CPU_nDSACK     |   10.759|
+FSB_A<18>      |nFPUCS         |   10.887|
+FSB_A<19>      |CPU_nDSACK     |   10.601|
+FSB_A<19>      |nFPUCS         |   10.945|
+FSB_A<20>      |CPU_nDSACK     |    9.890|
+FSB_A<21>      |CPU_nDSACK     |   10.054|
+FSB_A<22>      |CPU_nDSACK     |   10.300|
+FSB_A<23>      |CPU_nDSACK     |   10.098|
+FSB_A<24>      |CPU_nDSACK     |   10.551|
+FSB_A<25>      |CPU_nDSACK     |   10.797|
+FSB_A<26>      |CPU_nDSACK     |   10.476|
+FSB_A<27>      |CPU_nDSACK     |   10.851|
+FSB_A<28>      |CPU_nDSACK     |   11.005|
+FSB_A<29>      |CPU_nDSACK     |   10.668|
+FSB_A<30>      |CPU_nDSACK     |   10.761|
+FSB_A<31>      |CPU_nDSACK     |   10.776|
+FSB_FC<0>      |nFPUCS         |   11.389|
+FSB_FC<1>      |nFPUCS         |   10.227|
+FSB_FC<2>      |nFPUCS         |   11.232|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Oct 29 08:28:45 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 167 MB
+
+
+

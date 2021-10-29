@@ -1,0 +1,281 @@
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC_preroute.twx WarpLC_map.ncd -o WarpLC_preroute.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC_preroute.twx WarpLC_map.ncd -o WarpLC_preroute.twr WarpLC.pcf -ucf PLL.ucf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 
+xst -intstyle ise -ifn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.xst" -ofn "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WarpLC_map.ncd WarpLC.ngd WarpLC.pcf 
+par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml WarpLC.twx WarpLC.ncd -o WarpLC.twr WarpLC.pcf -ucf PLL.ucf 

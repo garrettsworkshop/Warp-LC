@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 29 10:03:01 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "instance_name/clkin1" PERIOD = 20 ns HIGH 50%;
+BEL "CLKFB_OUT" FEEDBACK = 0.16 ns BEL "CLKFB_IN";
+SCHEMATIC END;
+

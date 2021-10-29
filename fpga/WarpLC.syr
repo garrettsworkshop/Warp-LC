@@ -1,0 +1,1003 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: WarpLC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "WarpLC.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "WarpLC"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : WarpLC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" into library work
+Parsing module <CLK>.
+Analyzing Verilog file "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v" into library work
+Parsing module <WarpLC>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <WarpLC>.
+
+Elaborating module <CLK>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <BUFIO2FB(DIVIDE_BYPASS="TRUE")>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="EXTERNAL",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=12,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=6,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DIVIDE=6,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKIN_PERIOD=30.0,REF_JITTER=0.01)>.
+WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 133: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 134: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 135: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 136: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 137: Assignment to locked_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <ODDR2>.
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="SYNC")>.
+WARNING:HDLCompiler:413 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v" Line 352: Result of 31-bit expression is truncated to fit in 30-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <WarpLC>.
+    Related source file is "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v".
+    Set property "IOSTANDARD = LVCMOS33" for signal <FSB_FC>.
+    Set property "DRIVE = 2" for signal <FSB_FC>.
+    Set property "IOBDELAY = NONE" for signal <FSB_FC>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <FSB_A>.
+    Set property "DRIVE = 2" for signal <FSB_A>.
+    Set property "IOBDELAY = NONE" for signal <FSB_A>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <FSB_SIZ>.
+    Set property "IOBDELAY = NONE" for signal <FSB_SIZ>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_BA>.
+    Set property "DRIVE = 24" for signal <RAM_BA>.
+    Set property "SLOW = FALSE" for signal <RAM_BA>.
+    Set property "FAST = TRUE" for signal <RAM_BA>.
+    Set property "SLEW = FAST" for signal <RAM_BA>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_A>.
+    Set property "DRIVE = 24" for signal <RAM_A>.
+    Set property "SLOW = FALSE" for signal <RAM_A>.
+    Set property "FAST = TRUE" for signal <RAM_A>.
+    Set property "SLEW = FAST" for signal <RAM_A>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_DQM>.
+    Set property "DRIVE = 24" for signal <RAM_DQM>.
+    Set property "SLOW = FALSE" for signal <RAM_DQM>.
+    Set property "FAST = TRUE" for signal <RAM_DQM>.
+    Set property "SLEW = FAST" for signal <RAM_DQM>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_A>.
+    Set property "DRIVE = 2" for signal <IOB_A>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_SIZ>.
+    Set property "DRIVE = 2" for signal <IOB_SIZ>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_nDSACK>.
+    Set property "IOBDELAY = NONE" for signal <IOB_nDSACK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <FSB_RnW>.
+    Set property "DRIVE = 2" for signal <FSB_RnW>.
+    Set property "IOBDELAY = NONE" for signal <FSB_RnW>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nCIOUT>.
+    Set property "IOBDELAY = NONE" for signal <CPU_nCIOUT>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nAOE>.
+    Set property "DRIVE = 2" for signal <CPU_nAOE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nECS>.
+    Set property "IOBDELAY = NONE" for signal <CPU_nECS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nAS>.
+    Set property "IOBDELAY = NONE" for signal <CPU_nAS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nDS>.
+    Set property "IOBDELAY = NONE" for signal <CPU_nDS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nCBREQ>.
+    Set property "IOBDELAY = NONE" for signal <CPU_nCBREQ>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nDSACK>.
+    Set property "DRIVE = 24" for signal <CPU_nDSACK>.
+    Set property "SLOW = FALSE" for signal <CPU_nDSACK>.
+    Set property "FAST = TRUE" for signal <CPU_nDSACK>.
+    Set property "SLEW = FAST" for signal <CPU_nDSACK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nDSACKOE>.
+    Set property "DRIVE = 24" for signal <CPU_nDSACKOE>.
+    Set property "SLOW = FALSE" for signal <CPU_nDSACKOE>.
+    Set property "FAST = TRUE" for signal <CPU_nDSACKOE>.
+    Set property "SLEW = FAST" for signal <CPU_nDSACKOE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nDOE>.
+    Set property "DRIVE = 24" for signal <CPU_nDOE>.
+    Set property "SLOW = FALSE" for signal <CPU_nDOE>.
+    Set property "FAST = TRUE" for signal <CPU_nDOE>.
+    Set property "SLEW = FAST" for signal <CPU_nDOE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_DDIR>.
+    Set property "DRIVE = 24" for signal <CPU_DDIR>.
+    Set property "SLOW = FALSE" for signal <CPU_DDIR>.
+    Set property "FAST = TRUE" for signal <CPU_DDIR>.
+    Set property "IOB = FORCE" for signal <CPUCLK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPUCLK>.
+    Set property "DRIVE = 24" for signal <CPUCLK>.
+    Set property "SLOW = FALSE" for signal <CPUCLK>.
+    Set property "FAST = TRUE" for signal <CPUCLK>.
+    Set property "SLEW = FAST" for signal <CPUCLK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPUCLKIN>.
+    Set property "IOBDELAY = NONE" for signal <CPUCLKIN>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CLKIN>.
+    Set property "IOBDELAY = NONE" for signal <CLKIN>.
+    Set property "IOB = FORCE" for signal <FPUCLK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <FPUCLK>.
+    Set property "DRIVE = 24" for signal <FPUCLK>.
+    Set property "SLOW = FALSE" for signal <FPUCLK>.
+    Set property "FAST = TRUE" for signal <FPUCLK>.
+    Set property "SLEW = FAST" for signal <FPUCLK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <nFPUCS>.
+    Set property "DRIVE = 24" for signal <nFPUCS>.
+    Set property "SLOW = FALSE" for signal <nFPUCS>.
+    Set property "FAST = TRUE" for signal <nFPUCS>.
+    Set property "SLEW = FAST" for signal <nFPUCS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nSTERM>.
+    Set property "DRIVE = 24" for signal <CPU_nSTERM>.
+    Set property "SLOW = FALSE" for signal <CPU_nSTERM>.
+    Set property "FAST = TRUE" for signal <CPU_nSTERM>.
+    Set property "SLEW = FAST" for signal <CPU_nSTERM>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nCBACK>.
+    Set property "DRIVE = 24" for signal <CPU_nCBACK>.
+    Set property "SLOW = FALSE" for signal <CPU_nCBACK>.
+    Set property "FAST = TRUE" for signal <CPU_nCBACK>.
+    Set property "SLEW = FAST" for signal <CPU_nCBACK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nCIIN>.
+    Set property "DRIVE = 24" for signal <CPU_nCIIN>.
+    Set property "SLOW = FALSE" for signal <CPU_nCIIN>.
+    Set property "FAST = TRUE" for signal <CPU_nCIIN>.
+    Set property "SLEW = FAST" for signal <CPU_nCIIN>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nHALT>.
+    Set property "DRIVE = 2" for signal <CPU_nHALT>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nBERR>.
+    Set property "DRIVE = 2" for signal <CPU_nBERR>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_nCS>.
+    Set property "DRIVE = 24" for signal <RAM_nCS>.
+    Set property "SLOW = FALSE" for signal <RAM_nCS>.
+    Set property "FAST = TRUE" for signal <RAM_nCS>.
+    Set property "SLEW = FAST" for signal <RAM_nCS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_nRAS>.
+    Set property "DRIVE = 24" for signal <RAM_nRAS>.
+    Set property "SLOW = FALSE" for signal <RAM_nRAS>.
+    Set property "FAST = TRUE" for signal <RAM_nRAS>.
+    Set property "SLEW = FAST" for signal <RAM_nRAS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_nCAS>.
+    Set property "DRIVE = 24" for signal <RAM_nCAS>.
+    Set property "SLOW = FALSE" for signal <RAM_nCAS>.
+    Set property "FAST = TRUE" for signal <RAM_nCAS>.
+    Set property "SLEW = FAST" for signal <RAM_nCAS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_nWE>.
+    Set property "DRIVE = 24" for signal <RAM_nWE>.
+    Set property "SLOW = FALSE" for signal <RAM_nWE>.
+    Set property "FAST = TRUE" for signal <RAM_nWE>.
+    Set property "SLEW = FAST" for signal <RAM_nWE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_CKE>.
+    Set property "DRIVE = 24" for signal <RAM_CKE>.
+    Set property "SLOW = FALSE" for signal <RAM_CKE>.
+    Set property "FAST = TRUE" for signal <RAM_CKE>.
+    Set property "SLEW = FAST" for signal <RAM_CKE>.
+    Set property "IOB = FORCE" for signal <RAM_CLK01>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_CLK01>.
+    Set property "DRIVE = 24" for signal <RAM_CLK01>.
+    Set property "SLOW = FALSE" for signal <RAM_CLK01>.
+    Set property "FAST = TRUE" for signal <RAM_CLK01>.
+    Set property "SLEW = FAST" for signal <RAM_CLK01>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <RAM_CLK23>.
+    Set property "DRIVE = 24" for signal <RAM_CLK23>.
+    Set property "SLOW = FALSE" for signal <RAM_CLK23>.
+    Set property "FAST = TRUE" for signal <RAM_CLK23>.
+    Set property "SLEW = FAST" for signal <RAM_CLK23>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_nAOE>.
+    Set property "DRIVE = 2" for signal <IOB_nAOE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_ADoutLE>.
+    Set property "DRIVE = 2" for signal <IOB_ADoutLE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_nAS>.
+    Set property "DRIVE = 2" for signal <IOB_nAS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_nDS>.
+    Set property "DRIVE = 2" for signal <IOB_nDS>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_nDOE>.
+    Set property "DRIVE = 2" for signal <IOB_nDOE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_DDIR>.
+    Set property "DRIVE = 2" for signal <IOB_DDIR>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <nRESOE>.
+    Set property "DRIVE = 2" for signal <nRESOE>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <nRES>.
+    Set property "IOBDELAY = NONE" for signal <nRES>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOBCLK>.
+    Set property "IOBDELAY = NONE" for signal <IOBCLK>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_nHALT>.
+    Set property "IOBDELAY = NONE" for signal <IOB_nHALT>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <IOB_nBERR>.
+    Set property "IOBDELAY = NONE" for signal <IOB_nBERR>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CLKFB_IN>.
+    Set property "IOBDELAY = NONE" for signal <CLKFB_IN>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CLKFB_OUT>.
+    Set property "DRIVE = 24" for signal <CLKFB_OUT>.
+    Set property "SLOW = FALSE" for signal <CLKFB_OUT>.
+    Set property "FAST = TRUE" for signal <CLKFB_OUT>.
+    Set property "SLEW = FAST" for signal <CLKFB_OUT>.
+    Set property "IOB = FORCE" for signal <LHALT>.
+WARNING:Xst:647 - Input <FSB_A<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FSB_SIZ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IOB_nDSACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CPU_nCIOUT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CPU_nECS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CPU_nDS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CPU_nCBREQ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <nRES> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IOBCLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IOB_nBERR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <CPUCLKr1>.
+    Found 1-bit register for signal <CPUCLK>.
+    Found 1-bit register for signal <FPUCLK>.
+    Found 30-bit register for signal <LastA>.
+    Found 21-bit register for signal <LastAWR>.
+    Found 1-bit register for signal <CPU_nSTERM>.
+    Found 1-bit register for signal <nRESOE>.
+    Found 1-bit register for signal <LE>.
+    Found 1-bit register for signal <CPU_nBERR>.
+    Found 1-bit register for signal <CPUCLKr0>.
+    Found 30-bit adder for signal <FSB_A[31]_GND_1_o_add_6_OUT> created at line 352.
+WARNING:Xst:737 - Found 1-bit latch for signal <LHALT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 30-bit comparator equal for signal <FSB_A[31]_LastA[31]_equal_4_o> created at line 347
+    Found 31-bit comparator equal for signal <FSB_A[31]_GND_1_o_equal_5_o> created at line 347
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   2 Comparator(s).
+Unit <WarpLC> synthesized.
+
+Synthesizing Unit <CLK>.
+    Related source file is "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v".
+    Summary:
+	no macro.
+Unit <CLK> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 30-bit adder                                          : 1
+# Registers                                            : 10
+ 1-bit register                                        : 8
+ 21-bit register                                       : 1
+ 30-bit register                                       : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 2
+ 30-bit comparator equal                               : 1
+ 31-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 30-bit adder                                          : 1
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+# Comparators                                          : 2
+ 30-bit comparator equal                               : 1
+ 31-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <WarpLC> ...
+
+Optimizing unit <CLK> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block WarpLC, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : WarpLC.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 141
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 29
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      LUT4                        : 1
+#      LUT6                        : 20
+#      MUXCY                       : 48
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 62
+#      FD                          : 7
+#      FD_1                        : 1
+#      FDE                         : 51
+#      LD_1                        : 1
+#      ODDR2                       : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 49
+#      IBUF                        : 38
+#      IBUFG                       : 2
+#      OBUF                        : 9
+# Others                           : 2
+#      BUFIO2FB                    : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              61  out of  11440     0%  
+ Number of Slice LUTs:                   61  out of   5720     1%  
+    Number used as Logic:                61  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    114
+   Number with an unused Flip Flop:      53  out of    114    46%  
+   Number with an unused LUT:            53  out of    114    46%  
+   Number of fully used LUT-FF pairs:     8  out of    114     7%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                         170
+ Number of bonded IOBs:                  49  out of    186    26%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)  | Load  |
+------------------------------------+------------------------+-------+
+instance_name/pll_base_inst/CLKOUT0 | BUFG                   | 58    |
+LE                                  | NONE(LHALT)            | 1     |
+instance_name/pll_base_inst/CLKOUT1 | BUFG                   | 3     |
+instance_name/pll_base_inst/CLKFBOUT| BUFG                   | 2     |
+------------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.441ns (Maximum Frequency: 290.613MHz)
+   Minimum input arrival time before clock: 4.574ns
+   Maximum output required time after clock: 7.088ns
+   Maximum combinational path delay: 8.227ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'instance_name/pll_base_inst/CLKOUT0'
+  Clock period: 3.441ns (frequency: 290.613MHz)
+  Total number of paths / destination ports: 54 / 4
+-------------------------------------------------------------------------
+Delay:               3.441ns (Levels of Logic = 11)
+  Source:            LastAWR_13 (FF)
+  Destination:       CPU_nSTERM (FF)
+  Source Clock:      instance_name/pll_base_inst/CLKOUT0 rising
+  Destination Clock: instance_name/pll_base_inst/CLKOUT0 rising
+
+  Data Path: LastAWR_13 to CPU_nSTERM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.910  LastAWR_13 (LastAWR_13)
+     LUT6:I3->O            1   0.235   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_lut<0> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<0> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<1> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<2> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<3> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<4> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<5> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<6> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<7> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<7>)
+     MUXCY:CI->O           2   0.235   0.834  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<8> (FSB_A[31]_GND_1_o_equal_5_o)
+     LUT3:I1->O            1   0.250   0.000  CPU_nSTERM_rstpot1 (CPU_nSTERM_rstpot)
+     FD:D                      0.074          CPU_nSTERM
+    ----------------------------------------
+    Total                      3.441ns (1.697ns logic, 1.744ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'instance_name/pll_base_inst/CLKOUT1'
+  Clock period: 2.648ns (frequency: 377.644MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               1.324ns (Levels of Logic = 0)
+  Source:            CPUCLKr1 (FF)
+  Destination:       CPUCLK (FF)
+  Source Clock:      instance_name/pll_base_inst/CLKOUT1 falling
+  Destination Clock: instance_name/pll_base_inst/CLKOUT1 rising
+
+  Data Path: CPUCLKr1 to CPUCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             2   0.525   0.725  CPUCLKr1 (CPUCLKr1)
+     FD:D                      0.074          CPUCLK
+    ----------------------------------------
+    Total                      1.324ns (0.599ns logic, 0.725ns route)
+                                       (45.2% logic, 54.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'instance_name/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 650 / 103
+-------------------------------------------------------------------------
+Offset:              4.574ns (Levels of Logic = 12)
+  Source:            FSB_A<3> (PAD)
+  Destination:       CPU_nSTERM (FF)
+  Destination Clock: instance_name/pll_base_inst/CLKOUT0 rising
+
+  Data Path: FSB_A<3> to CPU_nSTERM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.328   1.221  FSB_A_3_IBUF (FSB_A_3_IBUF)
+     LUT6:I0->O            1   0.254   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_lut<0> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<0> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<1> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<2> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<3> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<4> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<5> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<6> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<7> (Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<7>)
+     MUXCY:CI->O           2   0.235   0.834  Mcompar_FSB_A[31]_GND_1_o_equal_5_o_cy<8> (FSB_A[31]_GND_1_o_equal_5_o)
+     LUT3:I1->O            1   0.250   0.000  CPU_nSTERM_rstpot1 (CPU_nSTERM_rstpot)
+     FD:D                      0.074          CPU_nSTERM
+    ----------------------------------------
+    Total                      4.574ns (2.519ns logic, 2.055ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LE'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.045ns (Levels of Logic = 1)
+  Source:            IOB_nHALT (PAD)
+  Destination:       LHALT (LATCH)
+  Destination Clock: LE rising
+
+  Data Path: IOB_nHALT to LHALT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  IOB_nHALT_IBUF (IOB_nHALT_IBUF)
+     LD_1:D                    0.036          LHALT
+    ----------------------------------------
+    Total                      2.045ns (1.364ns logic, 0.681ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'instance_name/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 54 / 4
+-------------------------------------------------------------------------
+Offset:              7.088ns (Levels of Logic = 13)
+  Source:            LastA_4 (FF)
+  Destination:       CPU_nDSACK (PAD)
+  Source Clock:      instance_name/pll_base_inst/CLKOUT0 rising
+
+  Data Path: LastA_4 to CPU_nDSACK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.910  LastA_4 (LastA_4)
+     LUT6:I3->O            1   0.235   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_lut<0> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<0> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<1> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<2> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<3> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<4> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<5> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<6> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<7> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<8> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<8>)
+     MUXCY:CI->O           2   0.235   0.954  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<9> (FSB_A[31]_LastA[31]_equal_4_o)
+     LUT3:I0->O            1   0.235   0.681  CPU_nDSACK1 (CPU_nDSACK_OBUF)
+     OBUF:I->O                 2.912          CPU_nDSACK_OBUF (CPU_nDSACK)
+    ----------------------------------------
+    Total                      7.088ns (4.543ns logic, 2.545ns route)
+                                       (64.1% logic, 35.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'instance_name/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            CPUCLK (FF)
+  Destination:       CPUCLK (PAD)
+  Source Clock:      instance_name/pll_base_inst/CLKOUT1 rising
+
+  Data Path: CPUCLK to CPUCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  CPUCLK (CPUCLK_OBUF)
+     OBUF:I->O                 2.912          CPUCLK_OBUF (CPUCLK)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 75 / 3
+-------------------------------------------------------------------------
+Delay:               8.227ns (Levels of Logic = 11)
+  Source:            FSB_A<13> (PAD)
+  Destination:       CPU_nDSACK (PAD)
+
+  Data Path: FSB_A<13> to CPU_nDSACK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   1.296  FSB_A_13_IBUF (FSB_A_13_IBUF)
+     LUT6:I0->O            1   0.254   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_lut<3> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_lut<3>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<3> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<4> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<5> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<6> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<7> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<8> (Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<8>)
+     MUXCY:CI->O           2   0.235   0.954  Mcompar_FSB_A[31]_LastA[31]_equal_4_o_cy<9> (FSB_A[31]_LastA[31]_equal_4_o)
+     LUT3:I0->O            1   0.235   0.681  CPU_nDSACK1 (CPU_nDSACK_OBUF)
+     OBUF:I->O                 2.912          CPU_nDSACK_OBUF (CPU_nDSACK)
+    ----------------------------------------
+    Total                      8.227ns (5.296ns logic, 2.931ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock instance_name/pll_base_inst/CLKOUT0
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+LE                                 |    1.336|         |         |         |
+instance_name/pll_base_inst/CLKOUT0|    3.441|         |         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock instance_name/pll_base_inst/CLKOUT1
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+instance_name/pll_base_inst/CLKOUT0|         |         |    1.324|         |
+instance_name/pll_base_inst/CLKOUT1|         |    1.324|         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+WARNING:Xst:615 - Flip flop associated with net RAM_CLK01_OBUF not found, property IOB not attached.
+WARNING:Xst:615 - Instance associated with port FSB_FC<2> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_FC<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_FC<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<31> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<30> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<29> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<28> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<27> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<26> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<25> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<24> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<23> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<22> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<21> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<20> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<19> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<18> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<17> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<16> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<15> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<14> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<13> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<12> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<11> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<10> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<9> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<8> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<7> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<6> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<5> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<4> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<3> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<2> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_A<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_RnW not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<31> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<31> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<30> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<30> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<29> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<29> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<28> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<28> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<27> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<27> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<26> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<26> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<25> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<25> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<24> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<24> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<23> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<23> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<22> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<22> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<21> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<21> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<20> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<20> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<19> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<19> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<18> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<18> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<17> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<17> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<16> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<16> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<15> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<15> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<14> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<14> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<13> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<13> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<12> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<12> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<11> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<11> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<10> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<10> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<9> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<9> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<8> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<8> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<7> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<7> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<6> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<6> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<5> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<5> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<4> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<4> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<3> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<3> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<2> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<2> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<1> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<0> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_D<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_BA<1> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_BA<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_BA<0> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_BA<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<12> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<12> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<11> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<11> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<10> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<10> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<9> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<9> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<8> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<8> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<7> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<7> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<6> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<6> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<5> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<5> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<4> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<4> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<3> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<3> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<2> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<2> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<1> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<0> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_A<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<3> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<3> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<2> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<2> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<1> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<0> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_DQM<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<3> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<3> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<2> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<2> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<1> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<0> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_A<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_SIZ<1> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_SIZ<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_SIZ<0> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_SIZ<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<31> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<31> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<30> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<30> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<29> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<29> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<28> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<28> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<27> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<27> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<26> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<26> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<25> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<25> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<24> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<24> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<23> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<23> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<22> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<22> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<21> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<21> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<20> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<20> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<19> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<19> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<18> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<18> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<17> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<17> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<16> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<16> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<15> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<15> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<14> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<14> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<13> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<13> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<12> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<12> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<11> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<11> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<10> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<10> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<9> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<9> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<8> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<8> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<7> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<7> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<6> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<6> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<5> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<5> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<4> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<4> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<3> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<3> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<2> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<2> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<1> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<1> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<0> not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_D<0> not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port FSB_nRMC not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port FSB_nRMC not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nAOE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nAOE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nDSACKOE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nDSACKOE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nDOE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nDOE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port CPU_DDIR not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port CPU_DDIR not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nCBACK not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nCBACK not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nCIIN not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nCIIN not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nHALT not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port CPU_nHALT not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nCS not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nCS not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nRAS not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nRAS not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nCAS not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nCAS not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nWE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_nWE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_CKE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_CKE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port RAM_CLK23 not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port RAM_CLK23 not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nAOE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nAOE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_ADoutLE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_ADoutLE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nAS not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nAS not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nDS not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nDS not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nDOE not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_nDOE not found, property DRIVE not attached.
+WARNING:Xst:615 - Instance associated with port IOB_DDIR not found, property IOSTANDARD not attached.
+WARNING:Xst:615 - Instance associated with port IOB_DDIR not found, property DRIVE not attached.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.02 secs
+ 
+--> 
+
+Total memory usage is 225340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  272 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

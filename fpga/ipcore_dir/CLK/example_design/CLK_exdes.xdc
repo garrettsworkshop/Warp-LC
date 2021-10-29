@@ -52,7 +52,7 @@
 #----------------------------------------------------------------
 create_clock -name CLK_IN1 -period 30.0 [get_ports CLK_IN1]
 set_propagated_clock CLK_IN1
-set_input_jitter CLK_IN1 0.30302999999999997
+set_input_jitter CLK_IN1 0.25
 
 # FALSE PATH constraint added on COUNTER_RESET 
 set_false_path -from [get_ports "COUNTER_RESET"]

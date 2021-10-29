@@ -52,7 +52,7 @@
 #----------------------------------------------------------------
 create_clock -name CLK_IN1 -period 30.0 [get_ports CLK_IN1]
 set_propagated_clock CLK_IN1
-set_input_jitter CLK_IN1 0.30302999999999997
+set_input_jitter CLK_IN1 0.25
 
 
 # Derived clock periods. These are commented out because they are 

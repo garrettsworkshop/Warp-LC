@@ -51,7 +51,7 @@ add wave -noupdate -format Literal -radix ascii /CLK_tb/test_phase
 add wave -noupdate -divider {Input clocks}
 add wave -noupdate -format Logic /CLK_tb/CLK_IN1
 add wave -noupdate -divider {Output clocks}
-add wave -noupdate -format Literal -expand /CLK_tb/dut/clk
+add wave -noupdate -format Logic /CLK_tb/dut/clk
 add wave -noupdate -divider Counters
 add wave -noupdate -format Literal -radix hexadecimal /CLK_tb/COUNT
-add wave -noupdate -format Literal -radix hexadecimal -expand /CLK_tb/dut/counter
+add wave -noupdate -format Literal -radix hexadecimal /CLK_tb/dut/counter

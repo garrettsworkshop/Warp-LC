@@ -54,13 +54,12 @@
 // "Output    Output      Phase     Duty      Pk-to-Pk        Phase"
 // "Clock    Freq (MHz) (degrees) Cycle (%) Jitter (ps)  Error (ps)"
 //----------------------------------------------------------------------------
-// CLK_OUT1____66.667______0.000______50.0______306.616____267.927
-// CLK_OUT2____66.667______0.000______50.0______306.616____267.927
+// CLK_OUT1____66.667______0.000______50.0______300.590____267.927
 //
 //----------------------------------------------------------------------------
 // "Input Clock   Freq (MHz)    Input Jitter (UI)"
 //----------------------------------------------------------------------------
-// __primary__________33.333___________0.010101
+// __primary_________33.3333___________0.00833333333333
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -74,6 +73,5 @@
     .CLKFB_IN(CLKFB_IN),     // IN
     // Clock out ports
     .FSBCLK(FSBCLK),     // OUT
-    .CPUCLK(CPUCLK),     // OUT
     .CLKFB_OUT(CLKFB_OUT));   // OUT
 // INST_TAG_END ------ End INSTANTIATION Template ---------

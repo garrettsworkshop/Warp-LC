@@ -40,7 +40,7 @@ module CLKGEN(
 	ODDR2 #(.DDR_ALIGNMENT("C0"), .INIT(1'b0), .SRTYPE("ASYNC"))
 		CPUCLK_inst  (.Q(CPUCLK),		.CE(1'b1),
 						  .C0(FSBCLK),		.C1(~FSBCLK),
-						  .D0(1'b0),		.D1(1'b1),
+						  .D0(~CPUCLKr),	.D1(~CPUCLKr),
 						  .R(1'b0),			.S(1'b0));
 	
 	ODDR2 #(.DDR_ALIGNMENT("C0"), .INIT(1'b0), .SRTYPE("ASYNC"))

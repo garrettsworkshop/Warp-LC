@@ -1,28 +1,21 @@
-Release 14.7 par P.20131013 (nt)
+Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ZANEPC::  Fri Oct 29 17:59:50 2021
+DOG-PC::  Sun Oct 31 15:38:29 2021
 
-par -w -intstyle ise -ol high -mt off WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
+par -w -intstyle ise -ol high -xe c -mt 4 WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
 
 
 Constraints file: WarpLC.pcf.
 Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "WarpLC" is an NCD, version 3.2, device xc6slx9, package ftg256, speed -2
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
-'C:\ispLEVER_Classic2_0\license\license.dat;C:\lscc\diamond\3.12\license\license.dat;C:\Xilinx\14.7\ISE_DS\Xilinx.lic'.
-INFO:Security:54 - 'xc6slx9' is a WebPack part.
-INFO:Security:66 - Your license for 'ISE' is for evaluation use only.
-WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
-WARNING:Security:44 - Since no license file was found,
-       please run the Xilinx License Configuration Manager
-       (xlcm or "Manage Xilinx Licenses")
-       to assist in obtaining a license.
-WARNING:Security:40 - Your license for 'ISE' expires in 4 days.
-
-----------------------------------------------------------------------
+INFO:Par:338 - 
+   Extra Effort Level "c"ontinue is not a runtime optimized effort level. It is intended to be used for designs that are
+   not meeting timing but where the designer wants the tools to continue iterating on the design until no further design
+   speed improvements are possible.  This can result in very long runtimes since the tools will continue improving the
+   design even if the time specs can not be met. If you are looking for the best possible design speed available from a
+   long but reasonable runtime use Extra Effort Level "n"ormal.  It will stop iterating on the design when the design
+   speed improvements have shrunk to the point that the time specs are not expected to be met.
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
 Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
@@ -35,30 +28,32 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    34 out of  11,440    1%
-    Number used as Flip Flops:                  34
+  Number of Slice Registers:                     1 out of  11,440    1%
+    Number used as Flip Flops:                   1
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         17 out of   5,720    1%
-    Number used as logic:                       13 out of   5,720    1%
-      Number using O6 output only:              11
-      Number using O5 output only:               0
-      Number using O5 and O6:                    2
+  Number of Slice LUTs:                         33 out of   5,720    1%
+    Number used as logic:                        9 out of   5,720    1%
+      Number using O6 output only:               8
+      Number using O5 output only:               1
+      Number using O5 and O6:                    0
       Number used as ROM:                        0
-    Number used as Memory:                       0 out of   1,440    0%
-    Number used exclusively as route-thrus:      4
-      Number with same-slice register load:      4
-      Number with same-slice carry load:         0
-      Number with other load:                    0
+    Number used as Memory:                      24 out of   1,440    1%
+      Number used as Dual Port RAM:             24
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                 20
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    11 out of   1,430    1%
-  Number of MUXCYs used:                        12 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:           41
-    Number with an unused Flip Flop:            11 out of      41   26%
-    Number with an unused LUT:                  24 out of      41   58%
-    Number of fully used LUT-FF pairs:           6 out of      41   14%
+  Number of occupied Slices:                     9 out of   1,430    1%
+  Number of MUXCYs used:                         8 out of   2,860    1%
+  Number of LUT Flip Flop pairs used:           33
+    Number with an unused Flip Flop:            32 out of      33   96%
+    Number with an unused LUT:                   0 out of      33    0%
+    Number of fully used LUT-FF pairs:           1 out of      33    3%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -69,12 +64,12 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        43 out of     186   23%
+  Number of bonded IOBs:                        66 out of     186   35%
     IOB Flip Flops:                              5
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
-  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of RAMB8BWERs:                          1 out of      64    1%
   Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
     Number used as BUFIO2s:                      1
     Number used as BUFIO2_2CLKs:                 0
@@ -107,42 +102,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 2 secs 
-Finished initial Timing Analysis.  REAL time: 2 secs 
-
-Starting Router
+PAR will use up to 4 processors
+Starting Multi-threaded Router
 
 
-Phase  1  : 164 unrouted;      REAL time: 2 secs 
+Phase  1  : 386 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 120 unrouted;      REAL time: 2 secs 
+Phase  2  : 172 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 68 unrouted;      REAL time: 2 secs 
+Phase  3  : 110 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 68 unrouted; (Setup:0, Hold:367, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  4  : 110 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
 
 Updating file: WarpLC.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:367, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:367, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:367, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:367, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
-Total REAL time to Router completion: 2 secs 
-Total CPU time to Router completion: 2 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
+Phase 11  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion (all processors): 4 secs 
 
 Generating "PAR" statistics.
 
@@ -153,11 +141,10 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|CLKGEN_inst/instance |              |      |      |            |             |
-|_name/clkfb_bufg_out |              |      |      |            |             |
-|                     | BUFGMUX_X3Y13| No   |    2 |  0.000     |  2.077      |
+|              FSBCLK | BUFGMUX_X3Y13| No   |   17 |  0.625     |  2.088      |
 +---------------------+--------------+------+------+------------+-------------+
-|              FSBCLK |  BUFGMUX_X2Y3| No   |   17 |  0.700     |  2.135      |
+|cg/pll/clkfb_bufg_ou |              |      |      |            |             |
+|                   t |  BUFGMUX_X2Y3| No   |    2 |  0.062     |  2.139      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -179,123 +166,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<3>" OFFSET = IN 12 ns VALID 1 | SETUP       |     1.520ns|    10.480ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.772ns|            |       0|           0
+  TS_CPU_nSTERM_A = MAXDELAY FROM TIMEGRP " | MAXDELAY    |     7.121ns|     7.879ns|       0|           0
+  FSB_A" TO TIMEGRP "CPU_nSTERM" 15 ns      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<27>" OFFSET = IN 12 ns VALID  | SETUP       |     1.666ns|    10.334ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.698ns|            |       0|           0
+  TS_cg_pll_clkout0 = PERIOD TIMEGRP "cg_pl | SETUP       |    11.311ns|     3.689ns|       0|           0
+  l_clkout0" TS_CLKIN / 2 HIGH 50%          | HOLD        |     0.458ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  COMP "INt" OFFSET = IN 12 ns VALID 12 ns  | SETUP       |     1.668ns|    10.332ns|       0|           0
-  BEFORE COMP "CLKIN"                       | HOLD        |     4.292ns|            |       0|           0
+  TS_CLKIN = PERIOD TIMEGRP "CLKIN" 30 ns H | MINLOWPULSE |    20.000ns|    10.000ns|       0|           0
+  IGH 50%                                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<8>" OFFSET = IN 12 ns VALID 1 | SETUP       |     1.713ns|    10.287ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.756ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<21>" OFFSET = IN 12 ns VALID  | SETUP       |     1.725ns|    10.275ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.718ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<28>" OFFSET = IN 12 ns VALID  | SETUP       |     1.739ns|    10.261ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.510ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<31>" OFFSET = IN 12 ns VALID  | SETUP       |     1.753ns|    10.247ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.707ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<15>" OFFSET = IN 12 ns VALID  | SETUP       |     1.904ns|    10.096ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.834ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<20>" OFFSET = IN 12 ns VALID  | SETUP       |     1.936ns|    10.064ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.578ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<0>" OFFSET = IN 12 ns VALID 1 | SETUP       |     1.972ns|    10.028ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.706ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<24>" OFFSET = IN 12 ns VALID  | SETUP       |     1.974ns|    10.026ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.679ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<13>" OFFSET = IN 12 ns VALID  | SETUP       |     1.989ns|    10.011ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.709ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<9>" OFFSET = IN 12 ns VALID 1 | SETUP       |     1.991ns|    10.009ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.618ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<19>" OFFSET = IN 12 ns VALID  | SETUP       |     2.005ns|     9.995ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.722ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<6>" OFFSET = IN 12 ns VALID 1 | SETUP       |     2.081ns|     9.919ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.621ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<22>" OFFSET = IN 12 ns VALID  | SETUP       |     2.093ns|     9.907ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.637ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<25>" OFFSET = IN 12 ns VALID  | SETUP       |     2.117ns|     9.883ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.244ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<1>" OFFSET = IN 12 ns VALID 1 | SETUP       |     2.124ns|     9.876ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.242ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<18>" OFFSET = IN 12 ns VALID  | SETUP       |     2.132ns|     9.868ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.829ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<29>" OFFSET = IN 12 ns VALID  | SETUP       |     2.136ns|     9.864ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.448ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<30>" OFFSET = IN 12 ns VALID  | SETUP       |     2.153ns|     9.847ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.725ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<2>" OFFSET = IN 12 ns VALID 1 | SETUP       |     2.158ns|     9.842ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.237ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<12>" OFFSET = IN 12 ns VALID  | SETUP       |     2.179ns|     9.821ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.605ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<4>" OFFSET = IN 12 ns VALID 1 | SETUP       |     2.234ns|     9.766ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.288ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<7>" OFFSET = IN 12 ns VALID 1 | SETUP       |     2.243ns|     9.757ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.464ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<23>" OFFSET = IN 12 ns VALID  | SETUP       |     2.263ns|     9.737ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.472ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<26>" OFFSET = IN 12 ns VALID  | SETUP       |     2.343ns|     9.657ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.292ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "CPU_nAS" OFFSET = IN 12 ns VALID 12 | SETUP       |     2.359ns|     9.641ns|       0|           0
-   ns BEFORE COMP "CLKIN"                   | HOLD        |     3.896ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<16>" OFFSET = IN 12 ns VALID  | SETUP       |     2.435ns|     9.565ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.493ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<10>" OFFSET = IN 12 ns VALID  | SETUP       |     2.438ns|     9.562ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.463ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<11>" OFFSET = IN 12 ns VALID  | SETUP       |     2.478ns|     9.522ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.200ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<5>" OFFSET = IN 12 ns VALID 1 | SETUP       |     2.735ns|     9.265ns|       0|           0
-  2 ns BEFORE COMP "CLKIN"                  | HOLD        |     3.204ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<17>" OFFSET = IN 12 ns VALID  | SETUP       |     2.739ns|     9.261ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.474ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "FSB_A<14>" OFFSET = IN 12 ns VALID  | SETUP       |     2.916ns|     9.084ns|       0|           0
-  12 ns BEFORE COMP "CLKIN"                 | HOLD        |     3.242ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  COMP "OUTt" OFFSET = OUT 5 ns AFTER COMP  | MAXDELAY    |     2.960ns|     2.040ns|       0|           0
-  "CLKIN"                                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "CLKGEN_inst/inst | SETUP       |    12.300ns|     2.700ns|       0|           0
-  ance_name/clkout0" derived from  NET "CLK | HOLD        |     0.457ns|            |       0|           0
-  GEN_inst/instance_name/clkin1" PERIOD = 3 |             |            |            |        |            
-  0 ns HIGH 50%                             |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET "CLKGEN_inst/instance_name/clkin1" PE | MINLOWPULSE |    20.000ns|    10.000ns|       0|           0
-  RIOD = 30 ns HIGH 50%                     |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "CLKGEN_inst/inst | MINPERIOD   |    27.334ns|     2.666ns|       0|           0
-  ance_name/clkfbout" derived from  NET "CL |             |            |            |        |            
-  KGEN_inst/instance_name/clkin1" PERIOD =  |             |            |            |        |            
-  30 ns HIGH 50%                            |             |            |            |        |            
+  TS_cg_pll_clkfbout = PERIOD TIMEGRP "cg_p | MINPERIOD   |    27.334ns|     2.666ns|       0|           0
+  ll_clkfbout" TS_CLKIN HIGH 50%            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -303,18 +184,15 @@ Derived Constraint Report
 Review Timing Report for more details on the following derived constraints.
 To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
 or "Run Timing Analysis" from Timing Analyzer (timingan).
-Derived Constraints for CLKGEN_inst/instance_name/clkin1
+Derived Constraints for TS_CLKIN
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|CLKGEN_inst/instance_name/clkin|     30.000ns|     10.000ns|      5.400ns|            0|            0|            0|           35|
-|1                              |             |             |             |             |             |             |             |
-| CLKGEN_inst/instance_name/clko|     15.000ns|      2.700ns|          N/A|            0|            0|           35|            0|
-| ut0                           |             |             |             |             |             |             |             |
-| CLKGEN_inst/instance_name/clkf|     30.000ns|      2.666ns|          N/A|            0|            0|            0|            0|
-| bout                          |             |             |             |             |             |             |             |
+|TS_CLKIN                       |     30.000ns|     10.000ns|      7.378ns|            0|            0|            0|            6|
+| TS_cg_pll_clkfbout            |     30.000ns|      2.666ns|          N/A|            0|            0|            0|            0|
+| TS_cg_pll_clkout0             |     15.000ns|      3.689ns|          N/A|            0|            0|            6|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -324,10 +202,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 3 secs 
-Total CPU time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion (all processors): 4 secs 
 
-Peak Memory Usage:  257 MB
+Peak Memory Usage:  322 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
@@ -335,7 +213,7 @@ Timing: Completed - No errors found.
 
 Number of error messages: 0
 Number of warning messages: 0
-Number of info messages: 0
+Number of info messages: 1
 
 Writing design to file WarpLC.ncd
 

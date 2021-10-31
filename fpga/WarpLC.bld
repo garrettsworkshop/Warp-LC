@@ -1,20 +1,75 @@
-Release 14.7 ngdbuild P.20131013 (nt)
+Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2
-WarpLC.ngc WarpLC.ngd
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p
+xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd
 
-Reading NGO file "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.ngc" ...
+Reading NGO file "C:/Users/Dog/Documents/GitHub/Warp-LC/fpga/WarpLC.ngc" ...
+Loading design module "ipcore_dir/PrefetchTagRAM.ngc"...
+Loading design module "ipcore_dir/PrefetchDataRAM.ngc"...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "PLL.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-INFO:ConstraintSystem - The Period constraint <NET CLKIN PERIOD = 30ns HIGH;>
-   [PLL.ucf(3)], is specified using the Net Period method which is not
-   recommended. Please use the Timespec PERIOD method.
+WARNING:ConstraintSystem:119 - Constraint <NET "CPU_nAS" IOBDELAY = NONE>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/CPU_nAS' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_SIZ<0>" IOBDELAY = NONE>:
+   This constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_SIZ<0>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_SIZ<1>" IOBDELAY = NONE>:
+   This constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_SIZ<1>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_A<0>" IOBDELAY = NONE>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_A<0>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_A<1>" IOBDELAY = NONE>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_A<1>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_A<28>" IOBDELAY = NONE>:
+   This constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_A<28>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_A<29>" IOBDELAY = NONE>:
+   This constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_A<29>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_A<30>" IOBDELAY = NONE>:
+   This constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_A<30>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_A<31>" IOBDELAY = NONE>:
+   This constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_A<31>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+INFO:ConstraintSystem:178 - TNM 'CLKIN', used in period specification
+   'TS_CLKIN', was traced into PLL_ADV instance PLL_ADV. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKFBOUT: <TIMESPEC TS_cg_pll_clkfbout = PERIOD "cg_pll_clkfbout" TS_CLKIN
+   HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CLKIN', used in period specification
+   'TS_CLKIN', was traced into PLL_ADV instance PLL_ADV. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_cg_pll_clkout0 = PERIOD "cg_pll_clkout0" TS_CLKIN / 2
+   HIGH 50%>
 
 Done...
 
@@ -29,12 +84,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:   9
 
-Total memory usage is 133904 kilobytes
+Total memory usage is 163932 kilobytes
 
 Writing NGD file "WarpLC.ngd" ...
-Total REAL time to NGDBUILD completion:  1 sec
-Total CPU time to NGDBUILD completion:   1 sec
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "WarpLC.bld"...

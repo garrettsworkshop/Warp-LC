@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: WarpLC.prj
 
@@ -81,12 +81,12 @@ Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
-Optimization Effort                : 1
+Optimization Effort                : 2
 Power Reduction                    : NO
 Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
-Global Optimization                : AllClockNets
+Global Optimization                : Inpad_To_Outpad
 Read Cores                         : YES
 Write Timing Constraints           : NO
 Cross Clock Analysis               : NO
@@ -108,11 +108,19 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" into library work
-Parsing module <CLK>.
-Analyzing Verilog file "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\CLKGEN.v" into library work
-Parsing module <CLKGEN>.
-Analyzing Verilog file "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v" into library work
+Analyzing Verilog file "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PLL.v" into library work
+Parsing module <PLL>.
+Analyzing Verilog file "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PrefetchTagRAM.v" into library work
+Parsing module <PrefetchTagRAM>.
+Analyzing Verilog file "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PrefetchDataRAM.v" into library work
+Parsing module <PrefetchDataRAM>.
+Analyzing Verilog file "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\SizeDecode.v" into library work
+Parsing module <SizeDecode>.
+Analyzing Verilog file "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\PrefetchBuf.v" into library work
+Parsing module <L2Prefetch>.
+Analyzing Verilog file "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ClkGen.v" into library work
+Parsing module <ClkGen>.
+Analyzing Verilog file "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\WarpLC.v" into library work
 Parsing module <WarpLC>.
 
 =========================================================================
@@ -120,46 +128,62 @@ Parsing module <WarpLC>.
 =========================================================================
 
 Elaborating module <WarpLC>.
+WARNING:HDLCompiler:1016 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ClkGen.v" Line 32: Port LOCKED is not connected to this instance
 
-Elaborating module <CLKGEN>.
+Elaborating module <ClkGen>.
 
-Elaborating module <CLK>.
+Elaborating module <PLL>.
 
 Elaborating module <IBUFG>.
 
 Elaborating module <BUFIO2FB(DIVIDE_BYPASS="TRUE")>.
 
-Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="EXTERNAL",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=12,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=6,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKIN_PERIOD=30.0,REF_JITTER=0.008)>.
-WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 128: Assignment to clkout1_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 129: Assignment to clkout2_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 130: Assignment to clkout3_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 131: Assignment to clkout4_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 132: Assignment to clkout5_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v" Line 133: Assignment to locked_unused ignored, since the identifier is never used
+Elaborating module <PLL_BASE(BANDWIDTH="HIGH",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="EXTERNAL",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=28,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=14,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKIN_PERIOD=30.0,REF_JITTER=0.01)>.
+WARNING:HDLCompiler:1127 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PLL.v" Line 129: Assignment to clkout1_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PLL.v" Line 130: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PLL.v" Line 131: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PLL.v" Line 132: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PLL.v" Line 133: Assignment to clkout5_unused ignored, since the identifier is never used
 
 Elaborating module <BUFG>.
 
 Elaborating module <ODDR2>.
 
 Elaborating module <ODDR2(DDR_ALIGNMENT="C0",INIT=1'b0,SRTYPE="ASYNC")>.
-WARNING:HDLCompiler:1127 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v" Line 84: Assignment to CPUCLKr ignored, since the identifier is never used
+
+Elaborating module <SizeDecode>.
+WARNING:HDLCompiler:1127 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\WarpLC.v" Line 94: Assignment to FSB_B ignored, since the identifier is never used
+
+Elaborating module <L2Prefetch>.
+
+Elaborating module <PrefetchTagRAM>.
+WARNING:HDLCompiler:1499 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PrefetchTagRAM.v" Line 39: Empty module <PrefetchTagRAM> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\PrefetchBuf.v" Line 33: Size mismatch in connection of port <a>. Formal port size is 5-bit while actual signal size is 7-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\PrefetchBuf.v" Line 36: Size mismatch in connection of port <dpra>. Formal port size is 5-bit while actual signal size is 7-bit.
+
+Elaborating module <PrefetchDataRAM>.
+WARNING:HDLCompiler:1499 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PrefetchDataRAM.v" Line 39: Empty module <PrefetchDataRAM> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\PrefetchBuf.v" Line 44: Size mismatch in connection of port <addra>. Formal port size is 7-bit while actual signal size is 5-bit.
+WARNING:Xst:2972 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\WarpLC.v" line 91. All outputs of instance <sd> of block <SizeDecode> are unconnected in block <WarpLC>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <WarpLC>.
-    Related source file is "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v".
+    Related source file is "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\WarpLC.v".
     Set property "IOSTANDARD = LVCMOS33" for signal <FSB_A>.
     Set property "IOBDELAY = NONE" for signal <FSB_A>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <FSB_SIZ>.
+    Set property "IOBDELAY = NONE" for signal <FSB_SIZ>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <FSB_D>.
+    Set property "DRIVE = 8" for signal <FSB_D>.
+    Set property "SLEW = SLOW" for signal <FSB_D>.
     Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nAS>.
     Set property "IOBDELAY = NONE" for signal <CPU_nAS>.
-    Set property "IOSTANDARD = LVCMOS33" for signal <INt>.
-    Set property "IOBDELAY = NONE" for signal <INt>.
-    Set property "IOB = FALSE" for signal <OUTt>.
-    Set property "IOSTANDARD = LVCMOS33" for signal <OUTt>.
-    Set property "DRIVE = 24" for signal <OUTt>.
-    Set property "SLEW = FAST" for signal <OUTt>.
+    Set property "IOSTANDARD = LVCMOS33" for signal <CPU_nSTERM>.
+    Set property "DRIVE = 24" for signal <CPU_nSTERM>.
+    Set property "SLEW = FAST" for signal <CPU_nSTERM>.
     Set property "IOSTANDARD = LVCMOS33" for signal <CPUCLK>.
     Set property "DRIVE = 24" for signal <CPUCLK>.
     Set property "SLEW = FAST" for signal <CPUCLK>.
@@ -172,8 +196,6 @@ Synthesizing Unit <WarpLC>.
     Set property "IOSTANDARD = LVCMOS33" for signal <RAMCLK1>.
     Set property "DRIVE = 24" for signal <RAMCLK1>.
     Set property "SLEW = FAST" for signal <RAMCLK1>.
-    Set property "IOSTANDARD = LVCMOS33" for signal <CPUCLKi>.
-    Set property "IOBDELAY = NONE" for signal <CPUCLKi>.
     Set property "IOSTANDARD = LVCMOS33" for signal <CLKIN>.
     Set property "IOBDELAY = NONE" for signal <CLKIN>.
     Set property "IOSTANDARD = LVCMOS33" for signal <CLKFB_IN>.
@@ -181,37 +203,44 @@ Synthesizing Unit <WarpLC>.
     Set property "IOSTANDARD = LVCMOS33" for signal <CLKFB_OUT>.
     Set property "DRIVE = 24" for signal <CLKFB_OUT>.
     Set property "SLEW = FAST" for signal <CLKFB_OUT>.
-INFO:Xst:3210 - "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\WarpLC.v" line 79: Output port <CPUCLKr> of the instance <CLKGEN_inst> is unconnected or connected to loadless signal.
-    Found 32-bit register for signal <AR>.
-    Found 1-bit register for signal <OUTt>.
-    Found 32-bit comparator equal for signal <FSB_A[31]_AR[31]_equal_2_o> created at line 92
+WARNING:Xst:647 - Input <FSB_A<31:29>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CPU_nAS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\WarpLC.v" line 91: Output port <B> of the instance <sd> is unconnected or connected to loadless signal.
     Summary:
-	inferred  33 D-type flip-flop(s).
-	inferred   1 Comparator(s).
+	no macro.
 Unit <WarpLC> synthesized.
 
-Synthesizing Unit <CLKGEN>.
-    Related source file is "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\CLKGEN.v".
+Synthesizing Unit <ClkGen>.
+    Related source file is "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ClkGen.v".
+INFO:Xst:3210 - "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ClkGen.v" line 32: Output port <LOCKED> of the instance <pll> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <CPUCLKr>.
     Summary:
 	inferred   1 D-type flip-flop(s).
-Unit <CLKGEN> synthesized.
+Unit <ClkGen> synthesized.
 
-Synthesizing Unit <CLK>.
-    Related source file is "C:\Users\zanek\Documents\GitHub\Warp-LC\fpga\ipcore_dir\CLK.v".
+Synthesizing Unit <PLL>.
+    Related source file is "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\ipcore_dir\PLL.v".
     Summary:
 	no macro.
-Unit <CLK> synthesized.
+Unit <PLL> synthesized.
+
+Synthesizing Unit <L2Prefetch>.
+    Related source file is "C:\Users\Dog\Documents\GitHub\Warp-LC\fpga\PrefetchBuf.v".
+WARNING:Xst:647 - Input <RDA<28:28>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WRA<28:28>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 21-bit comparator equal for signal <RDTag[20]_RDATag[20]_equal_5_o> created at line 28
+    Summary:
+	inferred   1 Comparator(s).
+Unit <L2Prefetch> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 3
- 1-bit register                                        : 2
- 32-bit register                                       : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
 # Comparators                                          : 1
- 32-bit comparator equal                               : 1
+ 21-bit comparator equal                               : 1
 
 =========================================================================
 
@@ -219,15 +248,19 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <ipcore_dir/PrefetchTagRAM.ngc>.
+Reading core <ipcore_dir/PrefetchDataRAM.ngc>.
+Loading core <PrefetchTagRAM> for timing and area information for instance <Way0Tag>.
+Loading core <PrefetchDataRAM> for timing and area information for instance <Way0Data>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 34
- Flip-Flops                                            : 34
+# Registers                                            : 1
+ Flip-Flops                                            : 1
 # Comparators                                          : 1
- 32-bit comparator equal                               : 1
+ 21-bit comparator equal                               : 1
 
 =========================================================================
 
@@ -238,11 +271,13 @@ INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE ha
 
 Optimizing unit <WarpLC> ...
 
-Optimizing unit <CLK> ...
+Optimizing unit <ClkGen> ...
+
+Optimizing unit <PLL> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block WarpLC, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block WarpLC, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -250,8 +285,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 34
- Flip-Flops                                            : 34
+# Registers                                            : 1
+ Flip-Flops                                            : 1
 
 =========================================================================
 
@@ -274,23 +309,26 @@ Top Level Output File Name         : WarpLC.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 29
-#      GND                         : 1
+# BELS                             : 22
+#      GND                         : 2
 #      INV                         : 3
-#      LUT3                        : 1
-#      LUT4                        : 1
-#      LUT6                        : 10
-#      MUXCY                       : 12
+#      LUT1                        : 1
+#      LUT6                        : 7
+#      MUXCY                       : 8
 #      VCC                         : 1
-# FlipFlops/Latches                : 39
-#      FD                          : 34
+# FlipFlops/Latches                : 50
+#      FD                          : 44
+#      FDR                         : 1
 #      ODDR2                       : 5
+# RAMS                             : 23
+#      RAM32X1D                    : 22
+#      RAMB8BWER                   : 1
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 43
-#      IBUF                        : 35
+# IO Buffers                       : 66
+#      IBUF                        : 26
 #      IBUFG                       : 2
-#      OBUF                        : 6
+#      OBUF                        : 38
 # Others                           : 2
 #      BUFIO2FB                    : 1
 #      PLL_ADV                     : 1
@@ -302,22 +340,26 @@ Selected Device : 6slx9ftg256-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              39  out of  11440     0%  
- Number of Slice LUTs:                   15  out of   5720     0%  
-    Number used as Logic:                15  out of   5720     0%  
+ Number of Slice Registers:              50  out of  11440     0%  
+ Number of Slice LUTs:                   55  out of   5720     0%  
+    Number used as Logic:                11  out of   5720     0%  
+    Number used as Memory:               44  out of   1440     3%  
+       Number used as RAM:               44
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     52
-   Number with an unused Flip Flop:      13  out of     52    25%  
-   Number with an unused LUT:            37  out of     52    71%  
-   Number of fully used LUT-FF pairs:     2  out of     52     3%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:    105
+   Number with an unused Flip Flop:      55  out of    105    52%  
+   Number with an unused LUT:            50  out of    105    47%  
+   Number of fully used LUT-FF pairs:     0  out of    105     0%  
+   Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          43
- Number of bonded IOBs:                  43  out of    186    23%  
+ Number of IOs:                          75
+ Number of bonded IOBs:                  66  out of    186    35%  
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
  Number of PLL_ADVs:                      1  out of      2    50%  
 
@@ -339,12 +381,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-------------------------------------------------+------------------------+-------+
-Clock Signal                                    | Clock buffer(FF name)  | Load  |
-------------------------------------------------+------------------------+-------+
-CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0 | BUFG                   | 42    |
-CLKGEN_inst/instance_name/pll_base_inst/CLKFBOUT| BUFG                   | 2     |
-------------------------------------------------+------------------------+-------+
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+cg/pll/pll_base_inst/CLKOUT0       | BUFG                   | 76    |
+cg/pll/pll_base_inst/CLKFBOUT      | BUFG                   | 2     |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -354,129 +396,141 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.580ns (Maximum Frequency: 387.597MHz)
-   Minimum input arrival time before clock: 3.547ns
-   Maximum output required time after clock: 4.118ns
-   Maximum combinational path delay: 1.328ns
+   Minimum period: 4.696ns (Maximum Frequency: 212.947MHz)
+   Minimum input arrival time before clock: 3.719ns
+   Maximum output required time after clock: 6.384ns
+   Maximum combinational path delay: 8.292ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0'
-  Clock period: 2.580ns (frequency: 387.597MHz)
-  Total number of paths / destination ports: 35 / 4
+Timing constraint: Default period analysis for Clock 'cg/pll/pll_base_inst/CLKOUT0'
+  Clock period: 4.696ns (frequency: 212.947MHz)
+  Total number of paths / destination ports: 50 / 50
 -------------------------------------------------------------------------
-Delay:               1.290ns (Levels of Logic = 0)
-  Source:            CLKGEN_inst/CPUCLKr (FF)
-  Destination:       CLKGEN_inst/FPUCLK_inst (FF)
-  Source Clock:      CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0 rising
-  Destination Clock: CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0 falling
+Delay:               2.348ns (Levels of Logic = 1)
+  Source:            cg/CPUCLKr (FF)
+  Destination:       cg/CPUCLK_inst (FF)
+  Source Clock:      cg/pll/pll_base_inst/CLKOUT0 rising
+  Destination Clock: cg/pll/pll_base_inst/CLKOUT0 falling
 
-  Data Path: CLKGEN_inst/CPUCLKr to CLKGEN_inst/FPUCLK_inst
+  Data Path: cg/CPUCLKr to cg/CPUCLK_inst
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.525   0.765  CLKGEN_inst/CPUCLKr (CLKGEN_inst/CPUCLKr)
-     ODDR2:D1                  0.000          CLKGEN_inst/FPUCLK_inst
+     FDR:C->Q              4   0.525   0.803  cg/CPUCLKr (cg/CPUCLKr)
+     INV:I->O              3   0.255   0.765  l2pre/CPUCLKr_INV_15_o1_INV_0 (l2pre/CPUCLKr_INV_15_o)
+     ODDR2:D1                  0.000          cg/CPUCLK_inst
     ----------------------------------------
-    Total                      1.290ns (0.525ns logic, 0.765ns route)
-                                       (40.7% logic, 59.3% route)
+    Total                      2.348ns (0.780ns logic, 1.568ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 67 / 33
+Timing constraint: Default OFFSET IN BEFORE for Clock 'cg/pll/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 225 / 137
 -------------------------------------------------------------------------
-Offset:              3.547ns (Levels of Logic = 14)
+Offset:              3.719ns (Levels of Logic = 3)
   Source:            FSB_A<2> (PAD)
-  Destination:       OUTt (FF)
-  Destination Clock: CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0 rising
+  Destination:       l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qdpo_int_21 (FF)
+  Destination Clock: cg/pll/pll_base_inst/CLKOUT0 rising
 
-  Data Path: FSB_A<2> to OUTt
+  Data Path: FSB_A<2> to l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qdpo_int_21
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.328   1.181  FSB_A_2_IBUF (FSB_A_2_IBUF)
-     LUT6:I0->O            1   0.254   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_lut<0> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<0> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<1> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<2> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<3> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<4> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<5> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<6> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<7> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<8> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<9> (Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_FSB_A[31]_AR[31]_equal_2_o_cy<10> (FSB_A[31]_AR[31]_equal_2_o)
-     MUXCY:CI->O           1   0.262   0.000  CPU_nAS_FSB_A[31]_AND_3_o1_cy (CPU_nAS_FSB_A[31]_AND_3_o)
-     FD:D                      0.074          OUTt
+     IBUF:I->O            23   1.328   1.357  FSB_A_2_IBUF (FSB_A_2_IBUF)
+     begin scope: 'l2pre/Way0Tag:dpra<0>'
+     RAM32X1D:DPRA0->DPO    2   0.235   0.725  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3 (dpo<2>)
+     FD:D                      0.074          U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qdpo_int_2
     ----------------------------------------
-    Total                      3.547ns (2.366ns logic, 1.181ns route)
-                                       (66.7% logic, 33.3% route)
+    Total                      3.719ns (1.637ns logic, 2.082ns route)
+                                       (44.0% logic, 56.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET OUT AFTER for Clock 'cg/pll/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 54 / 33
 -------------------------------------------------------------------------
-Offset:              4.118ns (Levels of Logic = 1)
-  Source:            OUTt (FF)
-  Destination:       OUTt (PAD)
-  Source Clock:      CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0 rising
+Offset:              6.384ns (Levels of Logic = 11)
+  Source:            l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3 (RAM)
+  Destination:       CPU_nSTERM (PAD)
+  Source Clock:      cg/pll/pll_base_inst/CLKOUT0 rising
 
-  Data Path: OUTt to OUTt
+  Data Path: l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3 to CPU_nSTERM
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.525   0.681  OUTt (OUTt_OBUF)
-     OBUF:I->O                 2.912          OUTt_OBUF (OUTt)
+     RAM32X1D:WCLK->DPO    2   1.012   0.954  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3 (dpo<2>)
+     end scope: 'l2pre/Way0Tag:dpo<2>'
+     LUT6:I3->O            1   0.235   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_lut<0> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<0> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<1> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<2> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<3> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<4> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<5> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<6> (l2pre/RDTag[20]_RDATag[20]_equal_5_o)
+     MUXCY:CI->O           1   0.235   0.681  CPU_nSTERM1_cy (CPU_nSTERM_OBUF)
+     OBUF:I->O                 2.912          CPU_nSTERM_OBUF (CPU_nSTERM)
     ----------------------------------------
-    Total                      4.118ns (3.437ns logic, 0.681ns route)
-                                       (83.5% logic, 16.5% route)
+    Total                      6.384ns (4.749ns logic, 1.635ns route)
+                                       (74.4% logic, 25.6% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 132 / 2
 -------------------------------------------------------------------------
-Delay:               1.328ns (Levels of Logic = 1)
-  Source:            CLKFB_IN (PAD)
-  Destination:       CLKGEN_inst/instance_name/clkfb_bufio2fb:I (PAD)
+Delay:               8.292ns (Levels of Logic = 13)
+  Source:            FSB_A<2> (PAD)
+  Destination:       CPU_nSTERM (PAD)
 
-  Data Path: CLKFB_IN to CLKGEN_inst/instance_name/clkfb_bufio2fb:I
+  Data Path: FSB_A<2> to CPU_nSTERM
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUFG:I->O            0   1.328   0.000  CLKGEN_inst/instance_name/clkfb_ibufg (CLKGEN_inst/instance_name/clkfb_ibuf2bufio2fb)
-    BUFIO2FB:I                 0.000          CLKGEN_inst/instance_name/clkfb_bufio2fb
+     IBUF:I->O            23   1.328   1.357  FSB_A_2_IBUF (FSB_A_2_IBUF)
+     begin scope: 'l2pre/Way0Tag:dpra<0>'
+     RAM32X1D:DPRA0->DPO    2   0.235   0.954  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3 (dpo<2>)
+     end scope: 'l2pre/Way0Tag:dpo<2>'
+     LUT6:I3->O            1   0.235   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_lut<0> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<0> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<1> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<2> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<3> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<4> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<5> (l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  l2pre/Mcompar_RDTag[20]_RDATag[20]_equal_5_o_cy<6> (l2pre/RDTag[20]_RDATag[20]_equal_5_o)
+     MUXCY:CI->O           1   0.235   0.681  CPU_nSTERM1_cy (CPU_nSTERM_OBUF)
+     OBUF:I->O                 2.912          CPU_nSTERM_OBUF (CPU_nSTERM)
     ----------------------------------------
-    Total                      1.328ns (1.328ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
+    Total                      8.292ns (5.300ns logic, 2.992ns route)
+                                       (63.9% logic, 36.1% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-CLKGEN_inst/instance_name/pll_base_inst/CLKOUT0|    2.454|         |    1.290|         |
------------------------------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock cg/pll/pll_base_inst/CLKOUT0
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+cg/pll/pll_base_inst/CLKOUT0|    2.568|         |    2.348|         |
+----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.72 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.67 secs
  
 --> 
 
-Total memory usage is 225148 kilobytes
+Total memory usage is 258804 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

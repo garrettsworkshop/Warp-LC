@@ -5,5 +5,9 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="Par" num="338" delta="old" >
+Extra Effort Level &quot;c&quot;ontinue is not a runtime optimized effort level. It is intended to be used for designs that are not meeting timing but where the designer wants the tools to continue iterating on the design until no further design speed improvements are possible.  This can result in very long runtimes since the tools will continue improving the design even if the time specs can not be met. If you are looking for the best possible design speed available from a long but reasonable runtime use Extra Effort Level &quot;n&quot;ormal.  It will stop iterating on the design when the design speed improvements have shrunk to the point that the time specs are not expected to be met.
+</msg>
+
 </messages>
 

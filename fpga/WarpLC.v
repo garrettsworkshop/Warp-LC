@@ -29,13 +29,17 @@ module WarpLC(
 	
 	(* IOSTANDARD = "LVCMOS33" *)
 	(* IOBDELAY = "NONE" *)
-	input INt,
+	input [1:0] FSB_SIZ,
 	
-	(* IOB = "FALSE" *)
+	(* IOSTANDARD = "LVCMOS33" *)
+	(* DRIVE = "8" *)
+	(* SLEW = "SLOW" *)
+	output [31:0] FSB_D,
+	
 	(* IOSTANDARD = "LVCMOS33" *)
 	(* DRIVE = "24" *)
 	(* SLEW = "FAST" *)
-	output reg OUTt,
+	output CPU_nSTERM,
 	
 	(* IOSTANDARD = "LVCMOS33" *)
 	(* DRIVE = "24" *)
@@ -56,11 +60,7 @@ module WarpLC(
 	(* DRIVE = "24" *)
 	(* SLEW = "FAST" *)
 	output RAMCLK1,
-	
-	(* IOSTANDARD = "LVCMOS33" *)
-	(* IOBDELAY = "NONE" *)
-	input CPUCLKi,
-	
+
 	(* IOSTANDARD = "LVCMOS33" *)
 	(* IOBDELAY = "NONE" *)
 	input CLKIN,
@@ -76,7 +76,7 @@ module WarpLC(
 	
 	wire FSBCLK;
 	wire CPUCLKr;
-	CLKGEN CLKGEN_inst(
+	ClkGen cg (
 		.CLKIN(CLKIN),
 		.CLKFB_IN(CLKFB_IN),
 		.CLKFB_OUT(CLKFB_OUT),
@@ -86,11 +86,28 @@ module WarpLC(
 		.FPUCLK(FPUCLK),
 		.RAMCLK0(RAMCLK0),
 		.RAMCLK1(RAMCLK1));
+		
+	wire [3:0] FSB_B;
+	SizeDecode sd (
+		.A(FSB_A[1:0]),
+		.SIZ(FSB_SIZ[1:0]),
+		.B(FSB_B[3:0]));
 	
-	reg [31:0] AR;
-	always @(posedge FSBCLK) begin
-		OUTt <= ~CPU_nAS && INt && CPUCLKi && FSB_A[31:0]==AR[31:0];
-		AR[31:0] <= FSB_A[31:0];
-	end
+	wire L2PrefetchMatch;
+	L2Prefetch l2pre (
+		.CLK(FSBCLK),
+		.CPUCLKr(CPUCLKr),
 
+		.RDA(FSB_A[28:2]),
+		.RDD(FSB_D[31:0]),
+		.Match(L2PrefetchMatch),
+
+		.WRA(27'b0),
+		.WRD(32'b0),
+		.WR(1'b0),
+		.WRM(4'b0),
+		.CLR(1'b0));
+	
+	assign CPU_nSTERM = ~(L2PrefetchMatch);
+		
 endmodule

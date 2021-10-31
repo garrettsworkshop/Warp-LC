@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module CLKGEN(
+module ClkGen(
 	input CLKIN,
 	input CLKFB_IN,
 	output CLKFB_OUT,
@@ -29,7 +29,7 @@ module CLKGEN(
 	output RAMCLK0,
 	output RAMCLK1);
 	
-	CLK instance_name (
+	PLL pll (
 		.CLKIN(CLKIN),
 		.CLKFB_IN(CLKFB_IN),
 		.CLKFB_OUT(CLKFB_OUT),

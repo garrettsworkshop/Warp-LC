@@ -43,9 +43,9 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 PrefetchTagRAM your_instance_name (
-  .a(a), // input [4 : 0] a
+  .a(a), // input [6 : 0] a
   .d(d), // input [21 : 0] d
-  .dpra(dpra), // input [4 : 0] dpra
+  .dpra(dpra), // input [6 : 0] dpra
   .clk(clk), // input clk
   .we(we), // input we
   .spo(spo), // output [21 : 0] spo

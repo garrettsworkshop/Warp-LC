@@ -75,12 +75,12 @@ use unisim.vcomponents.all;
 --------------------------------------------------------------------------------
 entity PrefetchTagRAM_exdes is
   PORT (
-    DPRA       : IN  STD_LOGIC_VECTOR(5-1 downto 0)           := (OTHERS => '0');
+    DPRA       : IN  STD_LOGIC_VECTOR(7-1 downto 0)           := (OTHERS => '0');
     CLK        : IN  STD_LOGIC                                                := '0';
     WE         : IN  STD_LOGIC                                                := '0';
     SPO        : OUT STD_LOGIC_VECTOR(22-1 downto 0);
     DPO        : OUT STD_LOGIC_VECTOR(22-1 downto 0);
-    A          : IN  STD_LOGIC_VECTOR(5-1-(4*0*boolean'pos(5>4)) downto 0)
+    A          : IN  STD_LOGIC_VECTOR(7-1-(4*0*boolean'pos(7>4)) downto 0)
                  := (OTHERS => '0');
     D          : IN  STD_LOGIC_VECTOR(22-1 downto 0)                := (OTHERS => '0')
       );
@@ -96,12 +96,12 @@ architecture xilinx of PrefetchTagRAM_exdes is
   component PrefetchTagRAM is
   PORT (
 
-    DPRA                    : IN  STD_LOGIC_VECTOR(5-1 downto 0)           := (OTHERS => '0');
+    DPRA                    : IN  STD_LOGIC_VECTOR(7-1 downto 0)           := (OTHERS => '0');
     CLK                     : IN STD_LOGIC;
     WE                      : IN  STD_LOGIC;
     SPO                     : OUT STD_LOGIC_VECTOR(22-1 downto 0);
     DPO                     : OUT STD_LOGIC_VECTOR(22-1 downto 0);
-    A                       : IN  STD_LOGIC_VECTOR(5-1-(4*0*boolean'pos(5>4)) downto 0)
+    A                       : IN  STD_LOGIC_VECTOR(7-1-(4*0*boolean'pos(7>4)) downto 0)
                               := (OTHERS => '0');
     D                       : IN  STD_LOGIC_VECTOR(22-1 downto 0)                := (OTHERS => '0')
 

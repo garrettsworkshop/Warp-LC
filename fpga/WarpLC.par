@@ -1,7 +1,7 @@
-Release 14.7 par P.20131013 (nt64)
+Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DOG-PC::  Sun Oct 31 15:38:29 2021
+ZANEPC::  Mon Nov 01 06:10:41 2021
 
 par -w -intstyle ise -ol high -xe c -mt 4 WarpLC_map.ncd WarpLC.ncd WarpLC.pcf 
 
@@ -33,27 +33,27 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         33 out of   5,720    1%
+  Number of Slice LUTs:                         89 out of   5,720    1%
     Number used as logic:                        9 out of   5,720    1%
-      Number using O6 output only:               8
+      Number using O6 output only:               7
       Number using O5 output only:               1
-      Number using O5 and O6:                    0
+      Number using O5 and O6:                    1
       Number used as ROM:                        0
-    Number used as Memory:                      24 out of   1,440    1%
-      Number used as Dual Port RAM:             24
-        Number using O6 output only:             4
+    Number used as Memory:                      80 out of   1,440    5%
+      Number used as Dual Port RAM:             80
+        Number using O6 output only:            80
         Number using O5 output only:             0
-        Number using O5 and O6:                 20
+        Number using O5 and O6:                  0
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     9 out of   1,430    1%
+  Number of occupied Slices:                    23 out of   1,430    1%
   Number of MUXCYs used:                         8 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:           33
-    Number with an unused Flip Flop:            32 out of      33   96%
-    Number with an unused LUT:                   0 out of      33    0%
-    Number of fully used LUT-FF pairs:           1 out of      33    3%
+  Number of LUT Flip Flop pairs used:           89
+    Number with an unused Flip Flop:            88 out of      89   98%
+    Number with an unused LUT:                   0 out of      89    0%
+    Number of fully used LUT-FF pairs:           1 out of      89    1%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -64,12 +64,12 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        66 out of     186   35%
+  Number of bonded IOBs:                        34 out of     186   18%
     IOB Flip Flops:                              5
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
-  Number of RAMB8BWERs:                          1 out of      64    1%
+  Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
     Number used as BUFIO2s:                      1
     Number used as BUFIO2_2CLKs:                 0
@@ -106,31 +106,31 @@ PAR will use up to 4 processors
 Starting Multi-threaded Router
 
 
-Phase  1  : 386 unrouted;      REAL time: 3 secs 
+Phase  1  : 672 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 172 unrouted;      REAL time: 3 secs 
+Phase  2  : 328 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 110 unrouted;      REAL time: 3 secs 
+Phase  3  : 155 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 110 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
+Phase  4  : 155 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
 Updating file: WarpLC.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:285, Component Switching Limit:0)     REAL time: 4 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
-Phase 11  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
-Total REAL time to Router completion: 4 secs 
-Total CPU time to Router completion (all processors): 4 secs 
+Phase 11  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion (all processors): 3 secs 
 
 Generating "PAR" statistics.
 
@@ -141,10 +141,10 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|              FSBCLK | BUFGMUX_X3Y13| No   |   17 |  0.625     |  2.088      |
+|              FSBCLK | BUFGMUX_X3Y13| No   |   29 |  0.585     |  2.022      |
 +---------------------+--------------+------+------+------------+-------------+
 |cg/pll/clkfb_bufg_ou |              |      |      |            |             |
-|                   t |  BUFGMUX_X2Y3| No   |    2 |  0.062     |  2.139      |
+|                   t |  BUFGMUX_X2Y3| No   |    2 |  0.062     |  2.072      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -157,55 +157,16 @@ for example SLICE loads not FF loads.
 
 Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
 
-Number of Timing Constraints that were not applied: 2
-
-Asterisk (*) preceding a constraint indicates it was not met.
-   This may be due to a setup or hold violation.
-
-----------------------------------------------------------------------------------------------------------
-  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
-                                            |             |    Slack   | Achievable | Errors |    Score   
-----------------------------------------------------------------------------------------------------------
-  TS_CPU_nSTERM_A = MAXDELAY FROM TIMEGRP " | MAXDELAY    |     7.121ns|     7.879ns|       0|           0
-  FSB_A" TO TIMEGRP "CPU_nSTERM" 15 ns      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_cg_pll_clkout0 = PERIOD TIMEGRP "cg_pl | SETUP       |    11.311ns|     3.689ns|       0|           0
-  l_clkout0" TS_CLKIN / 2 HIGH 50%          | HOLD        |     0.458ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  TS_CLKIN = PERIOD TIMEGRP "CLKIN" 30 ns H | MINLOWPULSE |    20.000ns|    10.000ns|       0|           0
-  IGH 50%                                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_cg_pll_clkfbout = PERIOD TIMEGRP "cg_p | MINPERIOD   |    27.334ns|     2.666ns|       0|           0
-  ll_clkfbout" TS_CLKIN HIGH 50%            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-
-
-Derived Constraint Report
-Review Timing Report for more details on the following derived constraints.
-To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
-or "Run Timing Analysis" from Timing Analyzer (timingan).
-Derived Constraints for TS_CLKIN
-+-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
-|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
-|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
-+-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_CLKIN                       |     30.000ns|     10.000ns|      7.378ns|            0|            0|            0|            6|
-| TS_cg_pll_clkfbout            |     30.000ns|      2.666ns|          N/A|            0|            0|            0|            0|
-| TS_cg_pll_clkout0             |     15.000ns|      3.689ns|          N/A|            0|            0|            6|            0|
-+-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-
-All constraints were met.
 
 
 Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion (all processors): 4 secs 
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion (all processors): 3 secs 
 
-Peak Memory Usage:  322 MB
+Peak Memory Usage:  258 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

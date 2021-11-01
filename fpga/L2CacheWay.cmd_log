@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj WarpLC -o C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/L2CacheWay.tfi -lib work C:/Users/zanek/Documents/GitHub/Warp-LC/fpga//L2CacheWay.v -module L2CacheWay -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

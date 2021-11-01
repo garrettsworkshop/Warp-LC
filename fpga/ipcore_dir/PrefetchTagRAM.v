@@ -46,9 +46,9 @@ module PrefetchTagRAM(
   dpo
 );
 
-input [4 : 0] a;
+input [6 : 0] a;
 input [21 : 0] d;
-input [4 : 0] dpra;
+input [6 : 0] dpra;
 input clk;
 input we;
 output [21 : 0] spo;
@@ -57,9 +57,9 @@ output [21 : 0] dpo;
 // synthesis translate_off
 
   DIST_MEM_GEN_V7_2 #(
-    .C_ADDR_WIDTH(5),
+    .C_ADDR_WIDTH(7),
     .C_DEFAULT_DATA("0"),
-    .C_DEPTH(32),
+    .C_DEPTH(128),
     .C_FAMILY("spartan6"),
     .C_HAS_CLK(1),
     .C_HAS_D(1),

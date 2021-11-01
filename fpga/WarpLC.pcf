@@ -1,18 +1,8 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Oct 31 15:38:26 2021
+// Written by: Map P.20131013 on Mon Nov 01 06:10:38 2021
 //! **************************************************************************
 
 SCHEMATIC START;
-PIN
-        l2pre/Way0Data/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<26>
-        = BEL
-        "l2pre/Way0Data/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        l2pre/Way0Data/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<27>
-        = BEL
-        "l2pre/Way0Data/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram"
-        PINNAME CLKBRDCLK;
 PIN cg/CPUCLK_inst_pins<1> = BEL "cg/CPUCLK_inst" PINNAME CK0;
 PIN cg/CPUCLK_inst_pins<2> = BEL "cg/CPUCLK_inst" PINNAME CK1;
 PIN cg/FPUCLK_inst_pins<1> = BEL "cg/FPUCLK_inst" PINNAME CK0;
@@ -21,98 +11,166 @@ PIN cg/RAMCLK0_inst_pins<1> = BEL "cg/RAMCLK0_inst" PINNAME CK0;
 PIN cg/RAMCLK0_inst_pins<2> = BEL "cg/RAMCLK0_inst" PINNAME CK1;
 PIN cg/RAMCLK1_inst_pins<1> = BEL "cg/RAMCLK1_inst" PINNAME CK0;
 PIN cg/RAMCLK1_inst_pins<2> = BEL "cg/RAMCLK1_inst" PINNAME CK1;
-TIMEGRP cg_pll_clkout0 = BEL "cg/pll/clkout1_buf" PIN
-        "l2pre/Way0Data/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<26>"
-        PIN
-        "l2pre/Way0Data/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<27>"
-        BEL "cg/CPUCLKr" BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/SP"
+TIMEGRP cg_pll_clkout0 = BEL "cg/pll/clkout1_buf" BEL "cg/CPUCLKr" BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram21/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram21/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram22/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram22/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/DP.LOW"
         PIN "cg/CPUCLK_inst_pins<1>" PIN "cg/CPUCLK_inst_pins<2>" PIN
         "cg/CPUCLK_inst_pins<1>" PIN "cg/CPUCLK_inst_pins<2>" PIN
         "cg/FPUCLK_inst_pins<1>" PIN "cg/FPUCLK_inst_pins<2>" PIN
@@ -127,106 +185,172 @@ TIMEGRP cg_pll_clkfbout = BEL "cg/pll/clkfbout_bufg" PIN
         "cg/pll/clkfbout_oddr_pins<1>" PIN "cg/pll/clkfbout_oddr_pins<2>" PIN
         "cg/pll/clkfbout_oddr_pins<1>" PIN "cg/pll/clkfbout_oddr_pins<2>";
 TIMEGRP CPU_nSTERM = BEL "CPU_nSTERM";
-TIMEGRP FSB_A = BEL "CPU_nSTERM" PIN
-        "l2pre/Way0Data/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<27>"
+TIMEGRP FSB_A = BEL "CPU_nSTERM" BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram3/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram2/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram6/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram4/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram5/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram9/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram7/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram10/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/SP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram21/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/SP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram21/DP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/DP.HIGH"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram22/SP"
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram11/DP.LOW"
         BEL
-        "l2pre/Way0Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram22/DP";
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram14/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram12/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram13/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram17/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram15/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram16/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram20/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram18/DP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/SP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/SP.LOW"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/DP.HIGH"
+        BEL
+        "l2pre/Tag/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram19/DP.LOW";
 PIN SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0> = BEL
         "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0" PINNAME DIVCLK;
 PIN cg/pll/pll_base_inst/PLL_ADV_pins<2> = BEL "cg/pll/pll_base_inst/PLL_ADV"
         PINNAME CLKIN1;
 TIMEGRP CLKIN = PIN "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0>" PIN
         "cg/pll/pll_base_inst/PLL_ADV_pins<2>";
-TS_CLKIN = PERIOD TIMEGRP "CLKIN" 30 ns HIGH 50%;
-TS_CPU_nSTERM_A = MAXDELAY FROM TIMEGRP "FSB_A" TO TIMEGRP "CPU_nSTERM" 15 ns;
-TS_cg_pll_clkfbout = PERIOD TIMEGRP "cg_pll_clkfbout" TS_CLKIN HIGH 50%;
-TS_cg_pll_clkout0 = PERIOD TIMEGRP "cg_pll_clkout0" TS_CLKIN / 2 HIGH 50%;
 BEL "CLKFB_OUT" FEEDBACK = 0.16 ns BEL "CLKFB_IN";
 SCHEMATIC END;
 

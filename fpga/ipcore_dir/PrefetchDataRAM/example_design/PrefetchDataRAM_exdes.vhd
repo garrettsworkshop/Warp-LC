@@ -91,16 +91,22 @@ ENTITY PrefetchDataRAM_exdes IS
     ENA            : IN STD_LOGIC;  --opt port
   
     WEA            : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    ADDRA          : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+    ADDRA          : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
   
     DINA           : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+  
+    DOUTA          : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
   
     CLKA       : IN STD_LOGIC;
 
   
       --Inputs - Port B
     ENB            : IN STD_LOGIC;  --opt port
-    ADDRB          : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+  
+    WEB            : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    ADDRB          : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+  
+    DINB           : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     DOUTB          : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     CLKB           : IN STD_LOGIC
 
@@ -124,9 +130,11 @@ ARCHITECTURE xilinx OF PrefetchDataRAM_exdes IS
     ENA        : IN STD_LOGIC;  --opt port
   
     WEA        : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    ADDRA      : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+    ADDRA      : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
   
     DINA       : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+  
+    DOUTA      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 
   
     CLKA       : IN STD_LOGIC;
@@ -134,7 +142,11 @@ ARCHITECTURE xilinx OF PrefetchDataRAM_exdes IS
   
       --Port B
     ENB        : IN STD_LOGIC;  --opt port
-    ADDRB      : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+  
+    WEB        : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    ADDRB      : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+  
+    DINB       : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     DOUTB      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     CLKB       : IN STD_LOGIC
 
@@ -170,13 +182,19 @@ BEGIN
       ADDRA      => ADDRA,
   
       DINA       => DINA,
+  
+      DOUTA      => DOUTA,
 
       CLKA       => CLKA_buf,
 
   
       --Port B
       ENB        => ENB, 
+  
+      WEB        => WEB,
       ADDRB      => ADDRB,
+  
+      DINB       => DINB,
       DOUTB      => DOUTB,
       CLKB       => CLKB_buf
 

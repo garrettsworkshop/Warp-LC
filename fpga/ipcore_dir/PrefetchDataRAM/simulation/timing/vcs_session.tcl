@@ -78,9 +78,12 @@ gui_list_add_group -id Wave.1 {PrefetchDataRAM_Group}
       gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/DINA
       gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/WEA
       gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/ENA
+      gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/DOUTA
       gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/CLKB
       gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/ADDRB
       gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/ENB
+      gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/DINB
+      gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/WEB
       gui_sg_addsignal -group PrefetchDataRAM_Group  /PrefetchDataRAM_tb/PrefetchDataRAM_synth_inst/bmg_port/DOUTB
 
 gui_zoom -window Wave.1 -full

@@ -1,7 +1,6 @@
 verilog work "ipcore_dir/PLL.v"
 verilog work "ipcore_dir/PrefetchTagRAM.v"
-verilog work "ipcore_dir/PrefetchDataRAM.v"
 verilog work "SizeDecode.v"
-verilog work "PrefetchBuf.v"
+verilog work "Prefetch.v"
 verilog work "ClkGen.v"
 verilog work "WarpLC.v"

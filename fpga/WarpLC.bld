@@ -1,19 +1,178 @@
-Release 14.7 ngdbuild P.20131013 (nt64)
+Release 14.7 ngdbuild P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p
-xc6slx9-ftg256-2 WarpLC.ngc WarpLC.ngd
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PLL.ucf -p xc6slx9-ftg256-2
+WarpLC.ngc WarpLC.ngd
 
-Reading NGO file "C:/Users/Dog/Documents/GitHub/Warp-LC/fpga/WarpLC.ngc" ...
+Reading NGO file "C:/Users/zanek/Documents/GitHub/Warp-LC/fpga/WarpLC.ngc" ...
 Loading design module "ipcore_dir/PrefetchTagRAM.ngc"...
-Loading design module "ipcore_dir/PrefetchDataRAM.ngc"...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "PLL.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<0>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<0>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<1>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<1>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<2>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<2>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<3>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<3>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<4>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<4>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<5>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<5>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<6>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<6>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<7>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<7>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<8>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<8>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<9>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<9>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<10>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<10>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<11>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<11>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<12>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<12>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<13>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<13>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<14>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<14>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<15>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<15>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<16>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<16>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<17>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<17>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<18>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<18>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<19>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<19>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<20>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<20>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<21>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<21>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<22>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<22>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<23>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<23>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<24>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<24>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<25>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<25>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<26>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<26>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<27>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<27>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<28>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<28>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<29>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<29>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<30>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<30>' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "FSB_D<31>" SLEW = SLOW>: This
+   constraint cannot be distributed from the design objects matching 'NET:
+   UniqueName: /WarpLC/EXPANDED/FSB_D<31>' because those design objects do not
+   contain or drive any instances of the correct type.
+
 WARNING:ConstraintSystem:119 - Constraint <NET "CPU_nAS" IOBDELAY = NONE>: This
    constraint cannot be distributed from the design objects matching 'NET:
    UniqueName: /WarpLC/EXPANDED/CPU_nAS' because those design objects do not
@@ -59,21 +218,41 @@ WARNING:ConstraintSystem:119 - Constraint <NET "FSB_A<31>" IOBDELAY = NONE>:
    UniqueName: /WarpLC/EXPANDED/FSB_A<31>' because those design objects do not
    contain or drive any instances of the correct type.
 
-INFO:ConstraintSystem:178 - TNM 'CLKIN', used in period specification
-   'TS_CLKIN', was traced into PLL_ADV instance PLL_ADV. The following new TNM
-   groups and period specifications were generated at the PLL_ADV output(s): 
-   CLKFBOUT: <TIMESPEC TS_cg_pll_clkfbout = PERIOD "cg_pll_clkfbout" TS_CLKIN
-   HIGH 50%>
-
-INFO:ConstraintSystem:178 - TNM 'CLKIN', used in period specification
-   'TS_CLKIN', was traced into PLL_ADV instance PLL_ADV. The following new TNM
-   groups and period specifications were generated at the PLL_ADV output(s): 
-   CLKOUT0: <TIMESPEC TS_cg_pll_clkout0 = PERIOD "cg_pll_clkout0" TS_CLKIN / 2
-   HIGH 50%>
-
 Done...
 
 Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'FSB_D<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'FSB_D<0>' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -84,12 +263,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   9
+  Number of warnings:  73
 
-Total memory usage is 163932 kilobytes
+Total memory usage is 134544 kilobytes
 
 Writing NGD file "WarpLC.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "WarpLC.bld"...

@@ -42,27 +42,33 @@ module PrefetchDataRAM(
   wea,
   addra,
   dina,
+  douta,
   clkb,
   enb,
+  web,
   addrb,
+  dinb,
   doutb
 );
 
 input clka;
 input ena;
 input [3 : 0] wea;
-input [6 : 0] addra;
+input [10 : 0] addra;
 input [31 : 0] dina;
+output [31 : 0] douta;
 input clkb;
 input enb;
-input [6 : 0] addrb;
+input [3 : 0] web;
+input [10 : 0] addrb;
+input [31 : 0] dinb;
 output [31 : 0] doutb;
 
 // synthesis translate_off
 
   BLK_MEM_GEN_V7_3 #(
-    .C_ADDRA_WIDTH(7),
-    .C_ADDRB_WIDTH(7),
+    .C_ADDRA_WIDTH(11),
+    .C_ADDRB_WIDTH(11),
     .C_ALGORITHM(1),
     .C_AXI_ID_WIDTH(4),
     .C_AXI_SLAVE_TYPE(0),
@@ -94,11 +100,11 @@ output [31 : 0] doutb;
     .C_INITB_VAL("0"),
     .C_INTERFACE_TYPE(0),
     .C_LOAD_INIT_FILE(0),
-    .C_MEM_TYPE(1),
+    .C_MEM_TYPE(2),
     .C_MUX_PIPELINE_STAGES(0),
     .C_PRIM_TYPE(1),
-    .C_READ_DEPTH_A(128),
-    .C_READ_DEPTH_B(128),
+    .C_READ_DEPTH_A(2048),
+    .C_READ_DEPTH_B(2048),
     .C_READ_WIDTH_A(32),
     .C_READ_WIDTH_B(32),
     .C_RST_PRIORITY_A("CE"),
@@ -115,8 +121,8 @@ output [31 : 0] doutb;
     .C_USE_SOFTECC(0),
     .C_WEA_WIDTH(4),
     .C_WEB_WIDTH(4),
-    .C_WRITE_DEPTH_A(128),
-    .C_WRITE_DEPTH_B(128),
+    .C_WRITE_DEPTH_A(2048),
+    .C_WRITE_DEPTH_B(2048),
     .C_WRITE_MODE_A("READ_FIRST"),
     .C_WRITE_MODE_B("READ_FIRST"),
     .C_WRITE_WIDTH_A(32),
@@ -129,17 +135,17 @@ output [31 : 0] doutb;
     .WEA(wea),
     .ADDRA(addra),
     .DINA(dina),
+    .DOUTA(douta),
     .CLKB(clkb),
     .ENB(enb),
+    .WEB(web),
     .ADDRB(addrb),
+    .DINB(dinb),
     .DOUTB(doutb),
     .RSTA(),
     .REGCEA(),
-    .DOUTA(),
     .RSTB(),
     .REGCEB(),
-    .WEB(),
-    .DINB(),
     .INJECTSBITERR(),
     .INJECTDBITERR(),
     .SBITERR(),

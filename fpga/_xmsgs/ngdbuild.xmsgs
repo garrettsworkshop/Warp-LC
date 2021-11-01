@@ -5,6 +5,102 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;0&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;0&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;1&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;1&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;2&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;2&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;3&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;3&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;4&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;4&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;5&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;5&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;6&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;6&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;7&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;7&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;8&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;8&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;9&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;9&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;10&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;10&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;11&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;11&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;12&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;12&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;13&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;13&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;14&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;14&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;15&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;15&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;16&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;16&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;17&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;17&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;18&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;18&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;19&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;19&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;20&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;20&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;21&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;21&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;22&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;22&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;23&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;23&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;24&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;24&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;25&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;25&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;26&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;26&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;27&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;27&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;28&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;28&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;29&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;29&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;30&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;30&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_D&lt;31&gt;&quot; SLEW = SLOW&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_D&lt;31&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
 <msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;CPU_nAS&quot; IOBDELAY = NONE&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/CPU_nAS</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
 </msg>
 
@@ -32,12 +128,100 @@
 <msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;FSB_A&lt;31&gt;&quot; IOBDELAY = NONE&gt;</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET: UniqueName: /WarpLC/EXPANDED/FSB_A&lt;31&gt;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CLKIN</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_CLKIN</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKFBOUT</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_cg_pll_clkfbout = PERIOD &quot;cg_pll_clkfbout&quot; TS_CLKIN HIGH 50%&gt;</arg>
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;31&gt;</arg>&apos; has no driver
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CLKIN</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_CLKIN</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_cg_pll_clkout0 = PERIOD &quot;cg_pll_clkout0&quot; TS_CLKIN / 2 HIGH 50%&gt;</arg>
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;30&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;29&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;28&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;27&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;26&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;25&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;24&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;23&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;22&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;21&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;20&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;19&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;18&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;17&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;16&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;15&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;14&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;13&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;12&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;11&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;10&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;9&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;8&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;7&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;6&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;5&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;4&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;3&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;2&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">FSB_D&lt;0&gt;</arg>&apos; has no driver
 </msg>
 
 </messages>

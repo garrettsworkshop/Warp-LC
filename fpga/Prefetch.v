@@ -50,14 +50,14 @@ module L2Prefetch(
 		.clka(CLK),
 		.ena(~CPUCLKr),
 		.wea(4'b0),
-		.addra({RDFixed7k5SEL ? RDA[12:9] : 4'hF , RDAIndex[6:0]}),
+		.addra({RDFixed7k5SEL ? RDA[12:9] : 4'hF , RDAIndex}),
 		.dina(32'b0),
 		.douta(RDD[31:0]),
 		
 		.clkb(CLK),
 		.enb(1'b0),
 		.web(WRM[3:0]),
-		.addrb({RDFixed7k5SEL ? WRA[12:9] : 4'hF , WRAIndex[6:0]}),
+		.addrb({RDFixed7k5SEL ? WRA[12:9] : 4'hF , WRAIndex}),
 		.dinb(WRD[31:0]));
 
 endmodule

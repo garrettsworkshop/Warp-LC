@@ -1,5 +1,5 @@
 module CS(
-	input [31:8] A
+	input [31:0] A,
 	output RAMCS,
 	output ROMCS,
 	output VRAMCS,
@@ -17,6 +17,6 @@ module CS(
 
 	assign CA[27] = A[30];
 	assign CA[26] = A[28];
-	assign CA[25:0] = A[25:0];
+	assign CA[25:2] = A[25:2];
 
 endmodule

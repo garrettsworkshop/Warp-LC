@@ -104,21 +104,45 @@ module WarpLC(
 		.B(FSB_B[3:0]));
 	
 	wire L2PrefetchMatch;
-	L2Prefetch l2pre (
+	wire [31:0] L2PrefetchRDD;
+	L2Prefetch prefetch (
 		.CLK(FSBCLK),
 		.CPUCLKr(CPUCLKr),
 
-		.RDA(FSB_A[27:2]),
-		.RDD(FSB_D[31:0]),
+		.RDA({FSB_A[30], FSB_A[28], FSB_A[25:2]}),
+		.RDD(L2PrefetchRDD),
 		.Match(L2PrefetchMatch),
 
-		.WRA(26'b0),
+		.WRA(28'b0),
 		.WRD(32'b0),
 		.WR(1'b0),
 		.WRM(4'b0),
 		.CLR(1'b0));
 	
-	assign CPU_nSTERM = ~(L2PrefetchMatch);
+	wire L2CacheMatch;
+	wire [31:0] L2CacheRDD;
+	L2Cache cache (
+		.CLK(CLK), 
+		.CPUCLKr(CPUCLKr), 
+		
+		.RDA({FSB_A[30], FSB_A[28], FSB_A[25:2]}), 
+		.RDD(L2CacheRDD), 
+		.Match(L2CacheMatch), 
+		
+		.WRA(28'b0), 
+		.WRD(32'b0), 
+		.WRM(4'b0), 
+		.TS(1'b0), 
+		.WR(1'b0), 
+		.CLR(1'b0), 
+		.ALL(1'b0));
+
+	assign FSB_D[31:0] = L2PrefetchMatch ? L2PrefetchRDD[31:0] :
+								L2CacheMatch ? L2CacheRDD[31:0] : 0;
+	
+	reg STERMEN = 0;
+	reg STERM = 0;
+	assign CPU_nSTERM = ~((L2PrefetchMatch && STERMEN) || STERM);
 		
 endmodule
 

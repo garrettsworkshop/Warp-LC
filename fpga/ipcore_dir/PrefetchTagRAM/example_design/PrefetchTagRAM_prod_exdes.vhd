@@ -77,7 +77,7 @@ entity PrefetchTagRAM_exdes is
   PORT (
       A          : IN  STD_LOGIC_VECTOR(7-1-(4*0*boolean'pos(7>4)) downto 0)
                  := (OTHERS => '0');
-      D          : IN  STD_LOGIC_VECTOR(22-1 downto 0)                := (OTHERS => '0');
+      D          : IN  STD_LOGIC_VECTOR(20-1 downto 0)                := (OTHERS => '0');
       DPRA       : IN  STD_LOGIC_VECTOR(7-1 downto 0)           := (OTHERS => '0');
       SPRA       : IN  STD_LOGIC_VECTOR(7-1 downto 0)           := (OTHERS => '0');
       CLK        : IN  STD_LOGIC                                                := '0';
@@ -90,10 +90,10 @@ entity PrefetchTagRAM_exdes is
       QDPO_RST   : IN  STD_LOGIC                                                := '0';
       QSPO_SRST  : IN  STD_LOGIC                                                := '0';
       QDPO_SRST  : IN  STD_LOGIC                                                := '0';
-      SPO        : OUT STD_LOGIC_VECTOR(22-1 downto 0);
-      DPO        : OUT STD_LOGIC_VECTOR(22-1 downto 0);
-      QSPO       : OUT STD_LOGIC_VECTOR(22-1 downto 0);
-      QDPO       : OUT STD_LOGIC_VECTOR(22-1 downto 0)
+      SPO        : OUT STD_LOGIC_VECTOR(20-1 downto 0);
+      DPO        : OUT STD_LOGIC_VECTOR(20-1 downto 0);
+      QSPO       : OUT STD_LOGIC_VECTOR(20-1 downto 0);
+      QDPO       : OUT STD_LOGIC_VECTOR(20-1 downto 0)
       );
 
 end PrefetchTagRAM_exdes;
@@ -110,11 +110,11 @@ architecture xilinx of PrefetchTagRAM_exdes is
       DPRA                    : IN  STD_LOGIC_VECTOR(7-1 downto 0)           := (OTHERS => '0');
       CLK                     : IN STD_LOGIC;
       WE                      : IN  STD_LOGIC;
-      SPO                     : OUT STD_LOGIC_VECTOR(22-1 downto 0);
-      DPO                     : OUT STD_LOGIC_VECTOR(22-1 downto 0);
+      SPO                     : OUT STD_LOGIC_VECTOR(20-1 downto 0);
+      DPO                     : OUT STD_LOGIC_VECTOR(20-1 downto 0);
       A                       : IN  STD_LOGIC_VECTOR(7-1-(4*0*boolean'pos(7>4)) downto 0)
                               := (OTHERS => '0');
-      D                       : IN  STD_LOGIC_VECTOR(22-1 downto 0)                := (OTHERS => '0')
+      D                       : IN  STD_LOGIC_VECTOR(20-1 downto 0)                := (OTHERS => '0')
 
 );
   end component;

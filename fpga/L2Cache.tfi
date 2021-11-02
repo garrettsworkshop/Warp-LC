@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+L2Cache instance_name (
+    .CLK(CLK), 
+    .CPUCLKr(CPUCLKr), 
+    .RDA(RDA), 
+    .RDD(RDD), 
+    .Match(Match), 
+    .WRA(WRA), 
+    .WRD(WRD), 
+    .WRM(WRM), 
+    .TS(TS), 
+    .WR(WR), 
+    .CLR(CLR), 
+    .ALL(ALL)
+    );
+
+

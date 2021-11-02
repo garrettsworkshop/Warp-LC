@@ -1,7 +1,7 @@
 /* L2 Prefetch Buffer
- * Prefetch tag RAM - 128 x 22s bits
+ * Prefetch tag RAM - 128 x 20 bits
  * 	(1) Valid
- *		(21) Tag - {A[30], A[28], A[25:0]}
+ *		(19) Tag - {A[30], A[28], A[25:2]}
  * Prefetch data RAM - 
  */
 module L2Prefetch(
@@ -9,6 +9,7 @@ module L2Prefetch(
 	input CPUCLKr,
 	
    input [27:2] RDA,
+	input RDFixed7k5SEL,
    output [31:0] RDD,
    output Match,
 	
@@ -33,7 +34,7 @@ module L2Prefetch(
 	wire TSValid;
 	wire RDMatch = RDValid && RDTag==RDATag;
 	wire TSMatch = TSValid && TSTag==WRATag;
-	PrefetchTagRAM Tag (
+	PrefetchTagRAM tag (
 		.clk(CLK),	
 		.we(WR && (WRM[3:0]==4'b1111 || TSMatch)),
 		.a(WRAIndex),
@@ -42,21 +43,21 @@ module L2Prefetch(
 		.dpra(RDAIndex),
 		.dpo({RDValid, RDTag}));
 
-	assign Match = RDMatch;
+	assign Match = RDMatch || RDFixed7k5SEL;
 	
 	/* Data */
-	PrefetchDataRAM your_instance_name (
+	PrefetchDataRAM data (
 		.clka(CLK),
 		.ena(~CPUCLKr),
-		.wea(1'b0),
-		.addra(addra), // input [8 : 0] addra
-		.dina(dina), // input [31 : 0] dina
-		.douta(douta), // output [31 : 0] douta
-		.clkb(clkb), // input clkb
-		.enb(enb), // input enb
-		.web(web), // input [0 : 0] web
-		.addrb(addrb), // input [8 : 0] addrb
-		.dinb(dinb), // input [31 : 0] dinb
-		.doutb(doutb)); // output [31 : 0] doutb
+		.wea(4'b0),
+		.addra({RDFixed7k5SEL ? RDA[12:9] : 4'hF , RDAIndex[6:0]}),
+		.dina(32'b0),
+		.douta(RDD[31:0]),
+		
+		.clkb(CLK),
+		.enb(1'b0),
+		.web(WRM[3:0]),
+		.addrb({RDFixed7k5SEL ? WRA[12:9] : 4'hF , WRAIndex[6:0]}),
+		.dinb(WRD[31:0]));
 
 endmodule

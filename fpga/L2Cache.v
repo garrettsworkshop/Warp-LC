@@ -15,8 +15,8 @@ module L2Cache(
 	input ALL);
 	
 	/* Cache ways */
-	wire [31:0] WayRDD[7:0];
-	wire WayRDMatch[7:0];
+	wire [255:0] WayRDD;
+	wire [7:0] WayRDMatch;
 	L2CacheWay Way[7:0] (
 		.CLK(CLK), 
 		.CPUCLKr(CPUCLKr), 
@@ -31,18 +31,18 @@ module L2Cache(
 		.CLR(CLR),
 		.ALL(ALL));
 
-	assign Match == WayRDMatch[0] || WayRDMatch[1] || 
-						 WayRDMatch[2] || WayRDMatch[3] || 
-						 WayRDMatch[4] || WayRDMatch[5] || 
-						 WayRDMatch[6] || WayRDMatch[7];
+	assign Match =	WayRDMatch[0] || WayRDMatch[1] || 
+						WayRDMatch[2] || WayRDMatch[3] || 
+						WayRDMatch[4] || WayRDMatch[5] || 
+						WayRDMatch[6] || WayRDMatch[7];
 						 
-	assign RDD[31:0] = WayRDMatch[0] ? WayRDD[0] : 
-							 WayRDMatch[1] ? WayRDD[1] : 
-							 WayRDMatch[2] ? WayRDD[2] : 
-							 WayRDMatch[3] ? WayRDD[3] : 
-							 WayRDMatch[4] ? WayRDD[4] : 
-							 WayRDMatch[5] ? WayRDD[5] : 
-							 WayRDMatch[6] ? WayRDD[6] : 
-							 WayRDMatch[7] ? WayRDD[7] : 0;
+	assign RDD[31:0] = WayRDMatch[0] ? WayRDD[31:00] : 
+							 WayRDMatch[1] ? WayRDD[63:32] : 
+							 WayRDMatch[2] ? WayRDD[95:64] : 
+							 WayRDMatch[3] ? WayRDD[127:96] : 
+							 WayRDMatch[4] ? WayRDD[159:128] : 
+							 WayRDMatch[5] ? WayRDD[191:160] : 
+							 WayRDMatch[6] ? WayRDD[223:192] : 
+							 WayRDMatch[7] ? WayRDD[255:224] : 0;
 
 endmodule

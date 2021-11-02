@@ -55,14 +55,14 @@ input clka;
 input ena;
 input [0 : 0] wea;
 input [9 : 0] addra;
-input [49 : 0] dina;
-output [49 : 0] douta;
+input [46 : 0] dina;
+output [46 : 0] douta;
 input clkb;
 input enb;
 input [0 : 0] web;
 input [9 : 0] addrb;
-input [49 : 0] dinb;
-output [49 : 0] doutb;
+input [46 : 0] dinb;
+output [46 : 0] doutb;
 
 // synthesis translate_off
 
@@ -105,8 +105,8 @@ output [49 : 0] doutb;
     .C_PRIM_TYPE(1),
     .C_READ_DEPTH_A(1024),
     .C_READ_DEPTH_B(1024),
-    .C_READ_WIDTH_A(50),
-    .C_READ_WIDTH_B(50),
+    .C_READ_WIDTH_A(47),
+    .C_READ_WIDTH_B(47),
     .C_RST_PRIORITY_A("CE"),
     .C_RST_PRIORITY_B("CE"),
     .C_RST_TYPE("SYNC"),
@@ -125,8 +125,8 @@ output [49 : 0] doutb;
     .C_WRITE_DEPTH_B(1024),
     .C_WRITE_MODE_A("READ_FIRST"),
     .C_WRITE_MODE_B("READ_FIRST"),
-    .C_WRITE_WIDTH_A(50),
-    .C_WRITE_WIDTH_B(50),
+    .C_WRITE_WIDTH_A(47),
+    .C_WRITE_WIDTH_B(47),
     .C_XDEVICEFAMILY("spartan6")
   )
   inst (

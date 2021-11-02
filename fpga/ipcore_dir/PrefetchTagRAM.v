@@ -47,12 +47,12 @@ module PrefetchTagRAM(
 );
 
 input [6 : 0] a;
-input [21 : 0] d;
+input [19 : 0] d;
 input [6 : 0] dpra;
 input clk;
 input we;
-output [21 : 0] spo;
-output [21 : 0] dpo;
+output [19 : 0] spo;
+output [19 : 0] dpo;
 
 // synthesis translate_off
 
@@ -88,7 +88,7 @@ output [21 : 0] dpo;
     .C_REG_A_D_INPUTS(0),
     .C_REG_DPRA_INPUT(0),
     .C_SYNC_ENABLE(1),
-    .C_WIDTH(22)
+    .C_WIDTH(20)
   )
   inst (
     .A(a),

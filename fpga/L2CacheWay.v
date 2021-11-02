@@ -1,7 +1,7 @@
 /* L2 Cache Way
- * 1024 x 49 bits
+ * 1024 x 47 bits
  *		(1) Valid
- * 	(16) Tag - {A[30], A[28], A[25:0]}
+ * 	(14) Tag - {A[30], A[28], A[25:2]}
  * 	(32) Data
  */
 module L2CacheWay(
@@ -29,7 +29,6 @@ module L2CacheWay(
 	wire [11:0] WRAIndex = WRA[11:2];
 	
 	/* Cache way RAM */
-	wire [31:0] RDD;
 	wire [31:0] TSD;
 	wire [15:0] RDTag;
 	wire [15:0] TSTag;

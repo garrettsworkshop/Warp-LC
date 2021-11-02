@@ -52,14 +52,14 @@ L2WayRAM your_instance_name (
   .ena(ena), // input ena
   .wea(wea), // input [0 : 0] wea
   .addra(addra), // input [9 : 0] addra
-  .dina(dina), // input [49 : 0] dina
-  .douta(douta), // output [49 : 0] douta
+  .dina(dina), // input [46 : 0] dina
+  .douta(douta), // output [46 : 0] douta
   .clkb(clkb), // input clkb
   .enb(enb), // input enb
   .web(web), // input [0 : 0] web
   .addrb(addrb), // input [9 : 0] addrb
-  .dinb(dinb), // input [49 : 0] dinb
-  .doutb(doutb) // output [49 : 0] doutb
+  .dinb(dinb), // input [46 : 0] dinb
+  .doutb(doutb) // output [46 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

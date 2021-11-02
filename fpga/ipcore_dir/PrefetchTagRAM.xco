@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Mon Nov 01 10:09:33 2021
+# Date: Tue Nov 02 04:32:07 2021
 #
 ##############################################################
 #
@@ -44,7 +44,7 @@ CSET coefficient_file=no_coe_file_loaded
 CSET common_output_ce=false
 CSET common_output_clk=false
 CSET component_name=PrefetchTagRAM
-CSET data_width=22
+CSET data_width=20
 CSET default_data=0
 CSET default_data_radix=16
 CSET depth=128
@@ -70,4 +70,4 @@ CSET sync_reset_qspo=false
 MISC pkg_timestamp=2012-11-21T20:07:40Z
 # END Extra information
 GENERATE
-# CRC: ff3decec
+# CRC: c3055252

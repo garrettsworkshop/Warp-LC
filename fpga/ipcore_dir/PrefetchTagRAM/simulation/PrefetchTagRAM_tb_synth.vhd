@@ -102,11 +102,11 @@ COMPONENT PrefetchTagRAM_exdes
     DPRA       : IN  STD_LOGIC_VECTOR(7-1 downto 0)           := (OTHERS => '0');
     CLK        : IN  STD_LOGIC                                                := '0';
     WE         : IN  STD_LOGIC                                                := '0';
-    SPO        : OUT STD_LOGIC_VECTOR(22-1 downto 0);
-    DPO        : OUT STD_LOGIC_VECTOR(22-1 downto 0);
+    SPO        : OUT STD_LOGIC_VECTOR(20-1 downto 0);
+    DPO        : OUT STD_LOGIC_VECTOR(20-1 downto 0);
     A          : IN  STD_LOGIC_VECTOR(7-1-(4*0*boolean'pos(7>4)) downto 0)
                  := (OTHERS => '0');
-    D          : IN  STD_LOGIC_VECTOR(22-1 downto 0)                := (OTHERS => '0')
+    D          : IN  STD_LOGIC_VECTOR(20-1 downto 0)                := (OTHERS => '0')
       );
 
 END COMPONENT;
@@ -128,12 +128,12 @@ END COMPONENT;
   SIGNAL DPRA_R: STD_LOGIC_VECTOR(6 DOWNTO 0) := (OTHERS => '0');
   SIGNAL WE : STD_LOGIC:='0';
   SIGNAL WE_R : STD_LOGIC:='0';
-  SIGNAL SPO: STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL SPO_R: STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL DPO: STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL DPO_R: STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL D: STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL D_R: STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL SPO: STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL SPO_R: STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL DPO: STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL DPO_R: STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL D: STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL D_R: STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
   SIGNAL CHECK_DATA_TDP : STD_LOGIC_VECTOR(1 DOWNTO 0) := (OTHERS => '0'); 
   SIGNAL CHECKER_EN_R: STD_LOGIC:='0';
   SIGNAL CHECKER_ENB_R : STD_LOGIC :=  '0'; 
@@ -188,8 +188,8 @@ STATUS(7 DOWNTO 0) <= ISSUE_FLAG_STATUS;
 
    DMG_DATA_CHECKER_INST_A: ENTITY work.PrefetchTagRAM_TB_CHECKER
       GENERIC MAP ( 
-        WRITE_WIDTH => 22,
-		  READ_WIDTH  => 22      )
+        WRITE_WIDTH => 20,
+		  READ_WIDTH  => 20      )
       PORT MAP (
         CLK     => CLKA,
         RST     => RSTA, 
@@ -210,8 +210,8 @@ STATUS(7 DOWNTO 0) <= ISSUE_FLAG_STATUS;
 
    DMG_DATA_CHECKER_INST_B: ENTITY work.PrefetchTagRAM_TB_CHECKER
       GENERIC MAP ( 
-        WRITE_WIDTH => 22,
-		  READ_WIDTH  => 22      )
+        WRITE_WIDTH => 20,
+		  READ_WIDTH  => 20      )
       PORT MAP (
         CLK     => CLKA,
         RST     => RSTA, 

@@ -118,11 +118,11 @@ ENTITY PrefetchTagRAM_TB_STIM_GEN IS
     CLK : IN STD_LOGIC;
     RST : IN STD_LOGIC;
     A   : OUT  STD_LOGIC_VECTOR(7-1 downto 0)   := (OTHERS => '0'); 
-    D   : OUT  STD_LOGIC_VECTOR(22-1 downto 0)        := (OTHERS => '0');
+    D   : OUT  STD_LOGIC_VECTOR(20-1 downto 0)        := (OTHERS => '0');
     DPRA : OUT  STD_LOGIC_VECTOR(7-1 downto 0)   := (OTHERS => '0');
     WE         : OUT  STD_LOGIC  := '0';
-    DATA_IN : IN STD_LOGIC_VECTOR (21 DOWNTO 0);   --OUTPUT VECTOR 
-    DATA_IN_B : IN STD_LOGIC_VECTOR (21 DOWNTO 0);   --OUTPUT VECTOR 
+    DATA_IN : IN STD_LOGIC_VECTOR (19 DOWNTO 0);   --OUTPUT VECTOR 
+    DATA_IN_B : IN STD_LOGIC_VECTOR (19 DOWNTO 0);   --OUTPUT VECTOR 
         
         
     CHECK_DATA : OUT STD_LOGIC_VECTOR(1 downto 0)   := (OTHERS => '0')
@@ -143,8 +143,8 @@ ARCHITECTURE BEHAVIORAL OF PrefetchTagRAM_TB_STIM_GEN IS
   SIGNAL   READ_ADDR_INT_B  : STD_LOGIC_VECTOR(6 DOWNTO 0)   := (OTHERS => '0');
   SIGNAL   READ_ADDR_A    : STD_LOGIC_VECTOR(31 DOWNTO 0)                := (OTHERS => '0');
   SIGNAL   READ_ADDR_B    : STD_LOGIC_VECTOR(31 DOWNTO 0)                := (OTHERS => '0');
-  SIGNAL   D_INT_A        : STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL   D_INT_B        : STD_LOGIC_VECTOR(21 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL   D_INT_A        : STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL   D_INT_B        : STD_LOGIC_VECTOR(19 DOWNTO 0) := (OTHERS => '0');
   SIGNAL   DO_WRITE_A     : STD_LOGIC                                    := '0';
   SIGNAL   DO_WRITE_B     : STD_LOGIC                                    := '0';
   SIGNAL   DO_WRITE       : STD_LOGIC                                    := '0';
@@ -215,8 +215,8 @@ WR_AGEN_INST_A:ENTITY work.PrefetchTagRAM_TB_AGEN
 
 WR_DGEN_INST_A:ENTITY work.PrefetchTagRAM_TB_DGEN
   GENERIC MAP (
-    DATA_GEN_WIDTH => 22,
-    DOUT_WIDTH     => 22,
+    DATA_GEN_WIDTH => 20,
+    DOUT_WIDTH     => 20,
     DATA_PART_CNT  => DATA_PART_CNT_A,
     SEED           => 2
   )
@@ -254,8 +254,8 @@ WR_AGEN_INST_B:ENTITY work.PrefetchTagRAM_TB_AGEN
 
 WR_DGEN_INST_B:ENTITY work.PrefetchTagRAM_TB_DGEN
   GENERIC MAP (
-    DATA_GEN_WIDTH => 22,
-    DOUT_WIDTH     => 22,
+    DATA_GEN_WIDTH => 20,
+    DOUT_WIDTH     => 20,
     DATA_PART_CNT  => DATA_PART_CNT_B,
     SEED           => 2
    )

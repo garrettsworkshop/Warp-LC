@@ -17,3 +17,5 @@ fp-info-cache
 
 
 *.DS_Store
+SE-030-backups/*
+*.kicad_prl

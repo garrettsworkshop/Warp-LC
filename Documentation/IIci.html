@@ -1,0 +1,332 @@
+<html>
+<head>
+	<title>Garrett's Workshop - Mac IIci RAM card timing</title>
+	<style type="text/css">
+		ul {
+			margin-top: 0;
+		}
+		h3 {
+			margin-bottom: 0;
+		}
+		h2, h4 {
+			margin-bottom: 3px;
+		}
+		h3 + h4 {
+			margin-top:6px;
+		}
+		p {
+			margin-top:0;
+		}
+		ul li {
+			padding-top: 3px;
+		}
+		ul li sup {
+			line-height: 0;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js" type="text/javascript"></script>
+</head>
+
+<body onload="WaveDrom.ProcessAll()">
+<h1>Garrett's Workshop IIci RAM card timing Documentation</h1>
+
+<h3 id="t0">RAM single read - cache miss, bank precharged or wrong row open</h3>
+<script type="WaveDrom">{signal: [
+	{name: '100 MHz CLK',	wave: 'p...' +'....' +'....' +'....' +'....' +'....' +'.',		phase: 0.00, period: 1.0},
+["'030 clock/state",
+	{name: 'CS',			wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',		phase: 0.00, period: 1.0, data:[
+		0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0]},
+	{name: 'CPUCLK',		wave: 'n'    +'n'    +'n'     +'n'     +'n'     +'n'     +'n',		phase: 0.00, period: 4.0}],
+["'030 bus inputs",
+	{name: 'FC',			wave: 'xxxxxxxx2...........................xxxxxxxxxxxxxx',		phase: 0.00, period: 0.5},
+	{name: 'A, R/W',		wave: 'xxxxxxxx2...........................xxxxxxxxxxxxxx',		phase: 0.00, period: 0.5},
+	{name: '/AS',			wave: '1.......x...0...................x...1.............',		phase: 0.00, period: 0.5},
+	{name: '/CBREQ',		wave: '1.................................................',		phase: 0.00, period: 0.5}],
+["Cycle term. ctrl.",
+	{name: 'CACHE',			wave: 'x...' +'....' +'....' +'....' +'....' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: '/ASTERM',		wave: 'xxxxxxxxxxx1........................xxxxxxxxxxxxxx',		phase: 0.00, period: 0.5},
+	{name: '/SSTERM',		wave: '1...' +'....' +'....' +'0...' +'1...' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: '/STERM',		wave: 'xxxxxxxxxx1.............x0......x1................',		phase: 0.00, period: 0.5}],
+["L2$ ctrl.",
+	{name: 'L2CLK',			wave: '0...' +'..10' +'....' +'....' +'.10.' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: 'L2WR',			wave: '0...' +'....' +'....' +'....' +'1.0.' +'....' +'.',		phase: 0.00, period: 1.0}],
+["SDRAM ctrl.",
+	{name: 'RS',			wave: '2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2',		phase: 0.00, period: 1.0, data:[
+		'idle',		'idle',		'ready',	'read0',	'read1',	'idle',		'idle']},
+	{name: 'RAMCMD',		wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',		phase: 0.00, period: 1.0, data:[
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'PC', 'NOP','ACT','NOP',
+		'RD', 'NOP','NOP','NOP',
+		'NOP','PC', 'NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP']},
+	{name: 'RAMCKE',		wave: '1...' +'....' +'....' +'.0..' +'1...' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: 'RAMCLK',		wave: '01010101010101010101010101010101010101010101010101',		phase: 0.00, period: 0.5}],
+["Data bus",
+	{name: 'BD',			wave: 'zzzzzzzzzzzzzzzzzzzzzzzzzzzxx2.....xzzzzzzzzzzzzzz',		phase: 0.00, period: 0.5},
+	{name: 'D',				wave: 'zzzzzzzzzzzzzzzzzzzzzzzzzzxxxxx2..xzzzzzzzzzzzzzzz',		phase: 0.00, period: 0.5},
+	{name: '/DOE',			wave: '1...' +'....' +'....' +'.0..' +'.1..' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: 'DDIR',			wave: '1...' +'....' +'....' +'0...' +'..1.' +'....' +'.',		phase: 0.00, period: 1.0}],
+]}</script><br/><p>
+</p>
+
+<h3 id="t0">RAM single read - cache miss, row hit</h3>
+<script type="WaveDrom">{signal: [
+	{name: 'CLK',			wave: 'p...' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+["'030 clock/state",
+	{name: 'CS',			wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0]},
+	{name: 'CCLK',			wave: '0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0',				phase: 0.00, period: 1.0}],
+["'030 bus inputs",
+	{name: 'FC',			wave: 'xxxxxxxxx2..................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'A, R/W, /RMC',	wave: 'xxxxxxxxx2..................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'CIOUT',			wave: 'xxxxxxxxx2..................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/AS',			wave: '1.......x...0...........x...1.............',				phase: 0.00, period: 0.5},
+	{name: '/CBREQ',		wave: '1.........................................',				phase: 0.00, period: 0.5}],
+["Cycle term. ctrl.",
+	{name: 'ASTERMEN',		wave: '1...' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/ASTERM',		wave: 'xxxxxxxxxx1.................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/SSTERM',		wave: '1...' +'....' +'0...' +'1...' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/STERM',		wave: 'xxxxxxxxxx1.....x0......x1................',				phase: 0.00, period: 0.5}],
+["L2$ ctrl.",
+	{name: 'L2CLK',			wave: '0...' +'..10' +'....' +'.10.' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'L2WR',			wave: '0...' +'....' +'....' +'1.0.' +'....' +'.',				phase: 0.00, period: 1.0}],
+["SDRAM ctrl.",
+	{name: 'RS',			wave: '2...' +'2...' +'2...' +'2...' +'2...' +'2',				phase: 0.00, period: 1.0, data:[
+		'idle',		'idle',		'read0',	'read1',	'idle',		'idle']},
+	{name: 'RAMCMD',		wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'RD', 'NOP','NOP','NOP',
+		'NOP','PC', 'NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP']},
+	{name: 'RAMCKE',		wave: '1...' +'....' +'.0..' +'1...' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'RAMCLK',		wave: '010101010101010101010101010101010101010101',				phase: 0.00, period: 0.5}],
+["Data bus",
+	{name: 'BD',			wave: 'zzzzzzzzzzzzzzzzzzzxx2.....xzzzzzzzzzzzzzz',				phase: 0.00, period: 0.5},
+	{name: 'D',				wave: 'zzzzzzzzzzzzzzzzzzxxxxx2..xzzzzzzzzzzzzzzz',				phase: 0.00, period: 0.5},
+	{name: '/DOE',			wave: '1...' +'....' +'.0..' +'.1..' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'DDIR',			wave: '1...' +'....' +'0...' +'..1.' +'....' +'.',				phase: 0.00, period: 1.0}],
+]}</script><br/><p>
+</p>
+
+<h3 id="t0">RAM single read - cache hit</h3>
+<script type="WaveDrom">{signal: [
+	{name: 'CLK',			wave: 'p...' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+["'030 clock/state",
+	{name: 'CS',			wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0]},
+	{name: 'CCLK',			wave: '0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0',				phase: 0.00, period: 1.0}],
+["'030 bus inputs",
+	{name: 'FC',			wave: 'xxxxxxxxx2..................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'A, R/W, /RMC',	wave: 'xxxxxxxxx2..................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'CIOUT',			wave: 'xxxxxxxxx2..................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/AS',			wave: '1.......x...0...........x...1.............',				phase: 0.00, period: 0.5},
+	{name: '/CBREQ',		wave: '1.........................................',				phase: 0.00, period: 0.5}],
+["Cycle term. ctrl.",
+	{name: 'ASTERMEN',		wave: '1...' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/ASTERM',		wave: 'xxxxxxxxxx1.................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/SSTERM',		wave: '1...' +'....' +'0...' +'1...' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/STERM',		wave: 'xxxxxxxxxx1.....x0......x1................',				phase: 0.00, period: 0.5}],
+["L2$ ctrl.",
+	{name: 'L2CLK',			wave: '0...' +'..10' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'L2WR',			wave: '0...' +'....' +'....' +'1.0.' +'....' +'.',				phase: 0.00, period: 1.0}],
+["SDRAM ctrl.",
+	{name: 'RS',			wave: '2...' +'2...' +'2...' +'2...' +'2...' +'2',				phase: 0.00, period: 1.0, data:[
+		'idle',		'idle',		'L2read0',	'L2read1',	'idle',		'idle']},
+	{name: 'RAMCMD',		wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP']},
+	{name: 'RAMCKE',		wave: '1...' +'....' +'.0..' +'1...' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'RAMCLK',		wave: '010101010101010101010101010101010101010101',				phase: 0.00, period: 0.5}],
+["Data bus",
+	{name: 'BD',			wave: 'zzzzzzzzzzzzzzzzzzxx2.....xzzzzzzzzzzzzzzz',				phase: 0.00, period: 0.5},
+	{name: 'D',				wave: 'zzzzzzzzzzzzzzzzzzxxxx2...xzzzzzzzzzzzzzzz',				phase: 0.00, period: 0.5},
+	{name: '/DOE',			wave: '1...' +'....' +'.0..' +'.1..' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'DDIR',			wave: '1...' +'....' +'0...' +'..1.' +'....' +'.',				phase: 0.00, period: 1.0}],
+]}</script><br/><p>
+</p>
+
+<h3 id="t0">RAM burst read - cache miss, bank precharged or wrong row open</h3>
+<script type="WaveDrom">{signal: [
+	{name: 'CLK',			wave: 'p...' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'.',		phase: 0.00, period: 1.0},
+["'030 clock/state",
+	{name: 'CS',			wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',		phase: 0.00, period: 1.0, data:[
+		0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0]},
+	{name: 'CCLK',			wave: '0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0',		phase: 0.00, period: 1.0}],
+["'030 bus inputs",
+	{name: 'FC',			wave: 'xxxxxxxxx2..................................................xxxxxxxxxxxxxx',		phase: 0.00, period: 0.5},
+	{name: 'A, R/W, /RMC',	wave: 'xxxxxxxxx2..................................................xxxxxxxxxxxxxx',		phase: 0.00, period: 0.5},
+	{name: 'CIOUT',			wave: 'xxxxxxxxx2..................................................xxxxxxxxxxxxxx',		phase: 0.00, period: 0.5},
+	{name: '/AS',			wave: '1.......x...0...........................................x...1.............',		phase: 0.00, period: 0.5},
+	{name: '/CBREQ',		wave: '1.......x...0...................................x...1.....................',		phase: 0.00, period: 0.5}],
+["Cycle term. ctrl.",
+	{name: 'ASTERMEN',		wave: '1...' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: '/ASTERM',		wave: 'xxxxxxxxxx1.................................................xxxxxxxxxxxxxx',		phase: 0.00, period: 0.5},
+	{name: '/SSTERM',		wave: '1...' +'....' +'....' +'0...' +'....' +'....' +'....' +'1...' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: '/STERM',		wave: 'xxxxxxxxxx1.............x0..............................x1................',		phase: 0.00, period: 0.5}],
+["L2$ ctrl.",
+	{name: 'L2CLK',			wave: '0...' +'..10' +'....' +'....' +'.10.' +'.10.' +'.10.' +'.10.' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: 'L2WR',			wave: '0...' +'....' +'....' +'....' +'1.0.' +'1.0.' +'1.0.' +'1.0.' +'....' +'.',		phase: 0.00, period: 1.0}],
+["SDRAM ctrl.",
+	{name: 'RS',			wave: '2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2',		phase: 0.00, period: 1.0, data:[
+		'idle','idle','ready','burst0','burst1','burst2','burst3','burst4','idle','idle']},
+	{name: 'RAMCMD',		wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',		phase: 0.00, period: 1.0, data:[
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'PC', 'NOP','ACT','NOP',
+		'RD', 'RD', 'NOP','NOP',
+		'NOP','RD', 'NOP','NOP',
+		'NOP','RD', 'NOP','NOP',
+		'NOP','PC', 'NOP','NOP',
+		'NOP','ACT','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP']},
+	{name: 'RAMCKE',		wave: '1...' +'....' +'....' +'.0..' +'10..' +'10..' +'10..' +'1...' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: 'RAMCLK',		wave: '01010101010101010101010101010101010101010101010101010101010101010101010101',		phase: 0.00, period: 0.5}],
+["Data bus",
+	{name: 'BD',			wave: 'zzzzzzzzzzzzzzzzzzzzzzzzzzzxx2.....xx2.....xx2.....xx2.....xzzzzzzzzzzzzzz',		phase: 0.00, period: 0.5},
+	{name: 'D',				wave: 'zzzzzzzzzzzzzzzzzzzzzzzzzzzxxxx2...xxxx2...xxxx2...xxxx2..xzzzzzzzzzzzzzzz',		phase: 0.00, period: 0.5},
+	{name: '/DOE',			wave: '1...' +'....' +'....' +'.0..' +'....' +'....' +'....' +'.1..' +'....' +'.',		phase: 0.00, period: 1.0},
+	{name: 'DDIR',			wave: '1...' +'....' +'....' +'0...' +'....' +'....' +'....' +'..1.' +'....' +'.',		phase: 0.00, period: 1.0}],
+]}</script><br/><p>
+</p>
+
+<h3 id="t0">RAM burst read - cache miss, row hit</h3>
+<script type="WaveDrom">{signal: [
+	{name: 'CLK',			wave: 'p...' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+["'030 clock/state",
+	{name: 'CS',			wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0]},
+	{name: 'CCLK',			wave: '0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0',				phase: 0.00, period: 1.0}],
+["'030 bus inputs",
+	{name: 'FC',			wave: 'xxxxxxxxx2..........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'A, R/W, /RMC',	wave: 'xxxxxxxxx2..........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'CIOUT',			wave: 'xxxxxxxxx2..........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/AS',			wave: '1.......x...0...................................x...1.............',				phase: 0.00, period: 0.5},
+	{name: '/CBREQ',		wave: '1.......x...0...........................x...1.....................',				phase: 0.00, period: 0.5}],
+["Cycle term. ctrl.",
+	{name: 'ASTERMEN',		wave: '1...' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/ASTERM',		wave: 'xxxxxxxxxx1.........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/SSTERM',		wave: '1...' +'....' +'0...' +'....' +'....' +'....' +'1...' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/STERM',		wave: 'xxxxxxxxxx1.....x0..............................x1................',				phase: 0.00, period: 0.5}],
+["L2$ ctrl.",
+	{name: 'L2CLK',			wave: '0...' +'..10' +'....' +'.10.' +'.10.' +'.10.' +'.10.' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'L2WR',			wave: '0...' +'....' +'....' +'1.0.' +'1.0.' +'1.0.' +'1.0.' +'....' +'.',				phase: 0.00, period: 1.0}],
+["SDRAM ctrl.",
+	{name: 'RS',			wave: '2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2',				phase: 0.00, period: 1.0, data:[
+		'idle','idle','burst0','burst1','burst2','burst3','burst4','idle','idle']},
+	{name: 'RAMCMD',		wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'RD', 'RD', 'NOP','NOP',
+		'NOP','RD', 'NOP','NOP',
+		'NOP','RD', 'NOP','NOP',
+		'NOP','PC', 'NOP','NOP',
+		'NOP','ACT','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP']},
+	{name: 'RAMCKE',		wave: '1...' +'....' +'.0..' +'10..' +'10..' +'10..' +'1...' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'RAMCLK',		wave: '010101010101010101010101010101010101010101010101010101010101010101',				phase: 0.00, period: 0.5}],
+["Data bus",
+	{name: 'BD',			wave: 'zzzzzzzzzzzzzzzzzzzxx2.....xx2.....xx2.....xx2.....xzzzzzzzzzzzzzz',				phase: 0.00, period: 0.5},
+	{name: 'D',				wave: 'zzzzzzzzzzzzzzzzzzzxxxx2...xxxx2...xxxx2...xxxx2..xzzzzzzzzzzzzzzz',					phase: 0.00, period: 0.5},
+	{name: '/DOE',			wave: '1...' +'....' +'.0..' +'....' +'....' +'....' +'.1..' +'....' +'.',					phase: 0.00, period: 1.0},
+	{name: 'DDIR',			wave: '1...' +'....' +'0...' +'....' +'....' +'....' +'..1.' +'....' +'.',					phase: 0.00, period: 1.0}],
+]}</script><br/><p>
+</p>
+
+<h3 id="t0">RAM burst read - cache hit</h3>
+<script type="WaveDrom">{signal: [
+	{name: 'CLK',			wave: 'p...' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+["'030 clock/state",
+	{name: 'CS',			wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0,1,2,3,	0]},
+	{name: 'CCLK',			wave: '0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0.1.' +'0',				phase: 0.00, period: 1.0}],
+["'030 bus inputs",
+	{name: 'FC',			wave: 'xxxxxxxxx2..........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'A, R/W, /RMC',	wave: 'xxxxxxxxx2..........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'CIOUT',			wave: 'xxxxxxxxx2..........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/AS',			wave: '1.......x...0...................................x...1.............',				phase: 0.00, period: 0.5},
+	{name: '/CBREQ',		wave: '1.......x...0...........................x...1.....................',				phase: 0.00, period: 0.5}],
+["Cycle term. ctrl.",
+	{name: 'ASTERMEN',		wave: '1...' +'....' +'....' +'....' +'....' +'....' +'....' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/ASTERM',		wave: 'xxxxxxxxxx1.........................................xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/SSTERM',		wave: '1...' +'....' +'0...' +'....' +'....' +'....' +'1...' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: '/STERM',		wave: 'xxxxxxxxxx1.....x0..............................x1................',				phase: 0.00, period: 0.5}],
+["L2$ ctrl.",
+	{name: 'L2CLK',			wave: '0...' +'..10' +'....' +'....' +'.10.' +'.10.' +'.10.' +'....' +'.',				phase: 0.00, period: 1.0},
+	{name: 'L2WR',			wave: '0...' +'....' +'....' +'1.0.' +'1.0.' +'1.0.' +'1.0.' +'....' +'.',				phase: 0.00, period: 1.0}],
+["SDRAM ctrl.",
+	{name: 'RS',			wave: '2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2...' +'2',				phase: 0.00, period: 1.0, data:[
+		'idle','idle','L2burst0','L2burst1','L2burst2','L2burst3','L2burst4','idle','idle']},
+	{name: 'RAMCMD',		wave: '2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2222' +'2',				phase: 0.00, period: 1.0, data:[
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'PC', 'NOP','ACT','NOP',
+		'RD', 'RD', 'NOP','NOP',
+		'NOP','RD', 'NOP','NOP',
+		'NOP','PC', 'NOP','NOP',
+		'NOP','ACT','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP']},
+	{name: 'RAMCKE',		wave: '1...' +'....' +'.0..' +'10..' +'10..' +'10..' +'1...' +'....' +'.',					phase: 0.00, period: 1.0},
+	{name: 'RAMCLK',		wave: '010101010101010101010101010101010101010101010101010101010101010101',					phase: 0.00, period: 0.5}],
+["Data bus",
+	{name: 'BD',			wave: 'zzzzzzzzzzzzzzzzzzzxx2.....xx2.....xx2.....xx2.....xzzzzzzzzzzzzzz',					phase: 0.00, period: 0.5},
+	{name: 'D',				wave: 'zzzzzzzzzzzzzzzzzzzxxxx2...xxxx2...xxxx2...xxxx2..xzzzzzzzzzzzzzzz',						phase: 0.00, period: 0.5},
+	{name: '/DOE',			wave: '1...' +'....' +'.0..' +'....' +'....' +'....' +'.1..' +'....' +'.',						phase: 0.00, period: 1.0},
+	{name: 'DDIR',			wave: '1...' +'....' +'0...' +'....' +'....' +'....' +'..1.' +'....' +'.',						phase: 0.00, period: 1.0}],
+]}</script><br/><p>
+</p>
+
+<h3 id="t0">RAM write - row miss</h3>
+<script type="WaveDrom">{signal: [
+	{name: 'CLK',			wave: 'p...' +'....' +'....' +'....' +'.',														phase: 0.00, period: 1.0},
+["'030 clock/state",
+	{name: 'CS',			wave: '2222' +'2222' +'2222' +'2222' +'2',														phase: 0.00, period: 1.0, data:[
+    	0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]},
+	{name: 'CCLK',			wave: '0.1.0.1.0.1.0.1.0',																		phase: 0.00, period: 1.0}],
+["'030 bus inputs",
+	{name: 'FC',			wave: 'xxxxxxxxx2..........xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'A, R/W, /RMC',	wave: 'xxxxxxxxx2..........xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: 'CIOUT',			wave: 'xxxxxxxxx2..........xxxxxxxxxxxxxx',				phase: 0.00, period: 0.5},
+	{name: '/AS',			wave: '1.......x...0...x...1.............',				phase: 0.00, period: 0.5},
+	{name: '/CBREQ',		wave: '1.................................',				phase: 0.00, period: 0.5}],
+["Cycle term. ctrl.",
+	{name: 'ASTERMEN',		wave: '1...' +'....' +'0...' +'1...' +'.',														phase: 0.00, period: 1.0},
+	{name: '/ASTERM',		wave: 'xxxxxxxx' +'xx0.....' +'....xxxx' +'xxxxxxxxxx',											phase: 0.00, period: 0.5},
+	{name: '/SSTERM',		wave: '1...' +'....' +'....' +'....' +'.',														phase: 0.00, period: 1.0},
+	{name: '/STERM',		wave: 'xxxxxxxx' +'xxx0....' +'x1......' +'..........',											phase: 0.00, period: 0.5}],
+["L2$ ctrl.",
+	{name: 'L2CLK',			wave: '0...' +'..10' +'....' +'.10.' +'.',				phase: 0.00, period: 1.0},
+	{name: 'L2WR',			wave: '0...' +'....' +'....' +'1.0.' +'.',				phase: 0.00, period: 1.0}],
+["SDRAM ctrl.",
+	{name: 'RS',			wave: '2...' +'2...' +'2...' +'2...' +'2',														phase: 0.00, period: 1.0, data:[
+		'idle','idle','ready','write','idle','idle']},
+	{name: 'RAMCMD',		wave: '2222' +'2222' +'2222' +'2222' +'2',														phase: 0.00, period: 1.0, data:[
+		'NOP','NOP','NOP','NOP',
+		'NOP','NOP','NOP','NOP',
+		'ACT','NOP','NOP','NOP',
+		'WR', 'NOP','PC', 'NOP',
+		'NOP','NOP','NOP','NOP',
+		'NOP']},
+	{name: 'RAMCKE',		wave: '1...' +'....' +'....' +'....' +'.',														phase: 0.00, period: 1.0},
+	{name: 'RAMCLK',		wave: '0101010101010101010101010101010101',														phase: 0.00, period: 0.5}],
+["Data bus",
+	{name: 'BD',			wave: 'zzzzzzzzzzzzxxxxxx2.xzx2..xzzzzzzz',														phase: 0.00, period: 0.5},
+	{name: 'D',				wave: 'zzzzzzzzzzzzxxxx2...xzzzzzzzzzzzzz',														phase: 0.00, period: 0.5},
+	{name: '/DOE',			wave: '1...' +'....' +'0.1.' +'....' +'.',														phase: 0.00, period: 1.0},
+	{name: 'DDIR',			wave: '1...' +'....' +'....' +'....' +'.',														phase: 0.00, period: 1.0}],
+]}</script><br/><p>
+</p>
+</body>
+
+</html>
